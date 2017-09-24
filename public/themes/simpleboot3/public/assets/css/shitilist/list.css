@@ -1,0 +1,118 @@
+/*模拟试题*/
+.pracl-dalist{ width:950px; float:left; margin-right:20px; overflow:hidden;}
+.pracl-dalist .green {color: #5dbb88;}
+.pracl-dalist .red {color: #f96d15; }
+.pracl-dalist li {padding:12px 30px; line-height:24px; border-bottom: 1px dotted #ededed; *display:inline-block; overflow: hidden;position: relative; /*IE7*/ }
+.pracl-moni-dalist li{padding:10px 30px; line-height:28px;}
+.pracl-dalist li:hover { background-color: #fcfcfc; }
+.pracl-tklist { border-top: none; }
+.pracl-dalist .pracl-tk { border-bottom: 1px solid #ededed; }
+.pracl-dalist .pracl-tk li { height: 65px; clear: both; display: inline-block; overflow: hidden; border-bottom: none; border-top: 1px solid #ededed; }
+.pracl-dalist .pracl-tk li:hover { background-color: #f9f9f9 }
+.pracl-dalist .dal-lcon { width: 540px; line-height: 24px; overflow: hidden; }
+*html .pracl-dalist .dal-lcon { float: left; }
+.pracl-dalist li .exmaText { float: left; width: 58%; }
+.pracl-dalist li i.ico { background: url(mn_bg.png) 0 -85px; display: block; float: left; width: 42px; height: 43px; margin-right: 10px; margin-top: 3px }
+.pracl-dalist li i.zhen-ico { background-position: 0 -132px; }
+.pracl-dalist li h3 em { padding: 12px 15px 8px 15px; font-size: 12px; background: url(mn_bg.png) no-repeat 0 -63px; white-space: nowrap; font-size: 0; }
+.pracl-dalist li p { height: 24px; line-height:18px; overflow: hidden; font-size: 12px; color: #999;}
+/*.pracl-moni-dalist li p{ display:none;}*/
+.pracl-dalist li p span { margin-right: 20px; display: block; float: left; }
+.pracl-dalist li p span.r-num i{ width:10px; height:10px; display:block; float:left;background: url(ks_icon02.png) 0 -180px no-repeat; margin:5px 8px 0 0;}
+.pracl-dalist li h3 span { color: #fd8321; margin-right: 5px; }
+.pracl-dalist li .dal-but { height:40px; float: right; position: absolute; right: 30px; top:20px }
+.pracl-moni-dalist  li .dal-but { top:20px;}
+.pracl-dalist li .dal-but a { font-size: 12px; color: #999; margin-left: 15px; }
+.pracl-dalist li .dal-but a.downPage { padding: 3px 35px 0 18px; line-height:28px; width: 50px; background: url(ks_icon02.png) 0 -31px no-repeat; color: #999; transition: all .2s; -webkit-transition: all .2s; -moz-transition: all .2s; }
+
+.pracl-dalist li .dal-but a.downPage:hover { color: #ee491f; background-position: 0 -7px; }
+.pracl-dalist li h3 a:hover, .pracl-dalist li .dal-but a:hover { color: #e45c40; }
+.pracl-dalist li .dal-but a,.ui-table .zt { padding: 3px 10px; float: left; text-align: center; }
+.pracl-dalist li .zt-go i,.ui-table .zt i{ width:18px; height:17px; display:block; float:left; background:url(ks_icon02.png) 0 -95px no-repeat; margin:5px 8px 0 0;}
+.pracl-dalist li .zt-go:hover i,.ui-table .zt:hover i{ background-position:0 -69px;}
+.pracl-dalist li .dal-but .zt-go, .ui-table .zt, .ui-table .czct .this { color: #333!important; padding: 7px 15px; background: #f6f6f6; border: 1px solid #e7e7e7; box-shadow: 1px 2px 1px #eee; border-radius: 2px; }
+.pracl-dalist li .zt-go:hover, .pracl-dalist li .dal-but .zt-again, .pracl-dalist li .dal-but .zt-green, .ui-table .zt:hover,.ui-table .zt-again { background: #e45c40; color: #fff!important; box-shadow: none; border: 1px solid #e45c40; }
+*html .pracl-dalist li .dal-but .zt-again, *html .pracl-dalist li .dal-but .zt-green, *html .ui-table .zt:hover { border: 0; }
+.pracl-dalist li .dal-but .zt-again:hover,.ui-table .zt-again:hover { background: #f7795b; border-color: #f7795b; }
+.pracl-dalist li .dal-but .zt-green { background: #47ad76; border-color: #47ad76; }
+.pracl-dalist li .dal-but .zt-green:hover { background: #5dbb88; border-color: #5dbb88; }
+*html .pracl-dalist li .dal-but .zt-again:hover, *html .pracl-dalist li .dal-but .zt-green:hover { border: 0; }
+.pracl-dalist li .dal-but .zt-go,.ui-table .zt{ padding:2px 15px; font-size: 14px; border-radius: 2px; line-height:28px}
+
+.pracl-dalist li span em { float: left; }
+.pracl-dalist li .vso-star { width: 76px; height: 12px; display: block; overflow: hidden; background: url(star_icon.png) no-repeat; position: relative; z-index: 10; float: left; margin:3px 0 0 8px; }
+.pracl-dalist li .vso-star b { width: 76px; height: 12px; display: block; background: url(star_icon.png) no-repeat 0 -14px; position: absolute; top: 0; left: 0; z-index: 11; }
+.pracl-moni-dalist li.this .dal-but .zt-go,.pracl-moni-dalist li:hover .dal-but .zt-go{ margin-top:4px;}
+/*.pracl-moni-dalist li.this p,.pracl-moni-dalist li:hover p{ display:block;}*/
+.pracl-moni-dalist li.this .dal-but a.downPage,.pracl-moni-dalist li:hover .dal-but a.downPage{ margin-top:3px;}
+
+/*右侧*/
+.le-pracright{ width:225px; float:left; overflow:hidden;}
+.le-pracrcon{ padding:0; border-bottom:none;}
+.le-pracrcon h3{ font-size:16px; line-height:20px; border-left:5px solid #ee491f; padding-left:15px; margin:15px 0  0 -1px; zoom:1;_position:relative;}
+.prlist{border-bottom:1px solid #e5e5e5;}
+.client .img{  width:225px; text-align:center; padding:15px 0 20px 0;}
+.client .img img{ width:160px; height:160px; }
+.prlist ul{padding:20px 15px 0 0; line-height:22px; font-size:12px; color:#7f7f7f;}
+.prlist li{ margin-bottom:15px; padding-left:14px;}
+.prlist li .img{width:198px;display:block; margin-bottom:10px; }
+.prlist li .img img{ width:198px;overflow:hidden;}
+.prlist li .img:hover img{box-shadow:0 1px 2px 1px #eee; padding:0;}
+.prlist li h4 a{font-size:13px; color:#555; line-height:20px;}
+.prlist li h4 a:hover{ color:#e45c40;}
+.prlist li p{ width:100px; overflow:hidden;color:#e76c53; margin-top:3px;}
+.prlist li p i{ width:12px; height:12px; display:block; float:left; background:url(ks_icon02.png) 0 -122px no-repeat; margin:6px 5px 0 0;}
+.prlist li.line{ width:86%; height:1px; display:block; border-bottom:1px dashed #e7e7e7; margin:15px 0 20px 13px;}
+
+.pright-box{padding:0px;width:256px;font-family: "microsoft yahei";}
+.pright-box .item{ width:211px;font-size:0;padding-top:0px;margin-bottom:2px;position:relative;float:left;}
+.pright-box .item .ico-d{ width:5px; height:5px; display:block; background:#c7c7c7; border:2px solid #fff; border-radius:15px; position:absolute; left:-4px; top:7px;}
+.pright-box .item .ico-d.this{ background:#f0851d;}
+.pright-box .item .head-pic{position:absolute;left:10px;top:25px;z-index:12;width:32px;height:32px;margin:4px; border:1px solid #e7e7e7;-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;border-radius:50%;}
+.pright-box .item font{ padding-left:32px; line-height:35px;}
+.pright-box .item .time{display:block;height:21px;width:62px;border-radius:3px;font-size:12px;line-height:21px;background-color:#fbfbfb;border:1px solid #e1e1e1;padding-left:26px;color:#444; position:relative;}
+.pright-box .item .time i{ width:5px; height:9px; display:block; position:absolute; top:5px; left:-5px;  background:url(ks_icon02.png) 0 -151px no-repeat;}
+.pright-box .item .content{font-size:12px;color:#666;line-height:20px;margin:5px 12px 0px 12px;padding-bottom:10px;float:left;display:inline;}
+.pright-box .item .content .gry{color:#999}
+.pright-box .item .content .gry:hover{color:#f30}.body .item .content em{font-style:normal;color:#3C3}
+.pright-box .item:hover{background:#fafafa;cursor:pointer;-webkit-transition: all .2s linear;-moz-transition:all .2s linear;-ms-transition: all .2s linear;transition: all .2s linear; cursor:pointer}
+.pright-box .item:hover i{ background-position:-10px -151px;}
+.pright-box .item:hover .time,.body .item .timed{border-color:#F63;background:#F63;color:#fff;}.body .item a{cursor:pointer}
+.prlist li p.kc-name1{ width:100%; color:#555;}
+.prlist li p.kc-name1 em{ color:#999;}
+.prlist .list-item li.line{width:75%; margin:0 0 18px 13px;}
+
+/*右侧end*/
+
+
+/*ie6-ie8*/
+@media \0screen\,screen\9{
+  .pracl-nav .tagnav .nav-show{ width:76%;}
+  .cap-chtit li { width:14.26%;*width:14.2%;}
+  .cap-chtit li i{ margin-left:10%}
+  .pracl-dalist { width: 750px;}
+  .cap-chose { width: 1000px;}
+  .ui-table th, .ui-table td{ width:33%;}
+  .le-title span{ width:265px;}
+
+}
+
+/*宽度1000px*/
+@media screen and (max-width:1366px){
+  .pracl-nav .tagnav .nav-show{ width:76%;}
+  .cap-chtit li { width:14.26%; }
+  .cap-chtit li i{ margin-left:10%}
+  .pracl-dalist { width: 750px;}
+  .cap-chose { width: 1000px;}
+  .ui-table th, .ui-table td{ width:33%;}
+  .le-title span{ width:265px;}
+}
+
+/*宽度960px*/
+@media screen and (max-width:1000px){
+  .pracl-nav .tagnav .nav-show{ width:72%;}
+  .pracl-dalist {width:710px;}
+  .cap-chose { width: 960px;}
+  .ui-table th, .ui-table td{ width:33%;}
+  .le-title span{ width:250px;}
+}

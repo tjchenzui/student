@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>首页 {$site_info.site_name|default=''}</title>
+    <meta name="keywords" content="{$site_info.site_seo_keywords|default=''}"/>
+    <meta name="description" content="{$site_info.site_seo_description|default=''}">
+    <include file="public@head"/>
+    <link href="__TMPL__/public/assets/css/slippry/slippry.css" rel="stylesheet">
+    <link href="__TMPL__/public/assets/css/kecheng/chen.css" rel="stylesheet">
+
+    <style>
+        .caption-wraper {
+            position: absolute;
+            left: 50%;
+            bottom: 2em;
+        }
+
+        .caption-wraper .caption {
+            position: relative;
+            left: -50%;
+            background-color: rgba(0, 0, 0, 0.54);
+            padding: 0.4em 1em;
+            color: #fff;
+            -webkit-border-radius: 1.2em;
+            -moz-border-radius: 1.2em;
+            -ms-border-radius: 1.2em;
+            -o-border-radius: 1.2em;
+            border-radius: 1.2em;
+        }
+
+        .tc-gridbox {
+            margin: 0;
+        }
+
+        @media (max-width: 767px) {
+            .caption-wraper {
+                left: 0;
+                bottom: 0.4em;
+            }
+
+            .caption-wraper .caption {
+                left: 0;
+                padding: 0.2em 0.4em;
+                font-size: 0.92em;
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;
+                -ms-border-radius: 0;
+                -o-border-radius: 0;
+                border-radius: 0;
+            }
+        }
+
+    </style>
+    <hook name="before_head_end"/>
+</head>
+<body class="body-white">
+<include file="public@nav"/>
+<!--jiade kaishi-->
+<section class="class-section ">
+    <div class="container">
+        <div class="text-line">
+            <h2 style="text-align: center">
+                <span>推荐课程</span>
+                <div class="line"></div>
+            </h2>
+            <div class="subtitle">班级化学习体系，给你更多的课程相关服务。</div>
+        </div>
+        <div class="recommend-class-list row">
+            <div class="col-md-3 col-xs-6">
+                <div class="class-item">
+                    <div class="class-img-wrap">
+                        <a class="class-img" href="/classroom/58">
+                            <img src="__TMPL__/public/assets/images/kecheng/001.jpg" alt="《深度学习》第五期" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/course/2017/08-28/10144661b8b6898371.png" />
+                        </a>
+                        <div class="mask">
+
+                            <a href="/classroom/58" class="btn btn-warning">立即加入</a>
+                        </div>
+                    </div>
+                    <h3><a class="link-dark" href="/classroom/58">《深度学习》第五期</a></h3>
+                    <div class="metas">共有3门课程</div>
+                </div>          </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="class-item">
+                    <div class="class-img-wrap">
+                        <a class="class-img" href="/classroom/57">
+                            <img src="__TMPL__/public/assets/images/kecheng/001.jpg" alt="《BAT面试算法特训班》" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/course/2017/08-14/131454e3cc73024860.jpg" />
+                        </a>
+                        <div class="mask">
+
+                            <a href="/classroom/57" class="btn btn-warning">立即加入</a>
+                        </div>
+                    </div>
+                    <h3><a class="link-dark" href="/classroom/57">《BAT面试算法特训班》</a></h3>
+                    <div class="metas">共有3门课程</div>
+                </div>          </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="class-item">
+                    <div class="class-img-wrap">
+                        <a class="class-img" href="/classroom/56">
+                            <img src="__TMPL__/public/assets/images/kecheng/001.jpg" alt="《CTA投资与程序化交易》第一期" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/course/2017/07-31/182324c3f8b1412065.png" />
+                        </a>
+                        <div class="mask">
+
+                            <a href="/classroom/56" class="btn btn-warning">立即加入</a>
+                        </div>
+                    </div>
+                    <h3><a class="link-dark" href="/classroom/56">《CTA投资与程序化交易》第一期</a></h3>
+                    <div class="metas">共有3门课程</div>
+                </div>          </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="class-item">
+                    <div class="class-img-wrap">
+                        <a class="class-img" href="/classroom/55">
+                            <img src="__TMPL__/public/assets/images/kecheng/001.jpg" alt="《机器学习》升级版VI" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/course/2017/07-18/1808226c52f1301450.png" />
+                        </a>
+                        <div class="mask">
+
+                            <a href="/classroom/55" class="btn btn-warning">立即加入</a>
+                        </div>
+                    </div>
+                    <h3><a class="link-dark" href="/classroom/55">《机器学习》升级版VI</a></h3>
+                    <div class="metas">共有3门课程</div>
+                </div>          </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="class-item">
+                    <div class="class-img-wrap">
+                        <a class="class-img" href="/classroom/17">
+                            <img src="__TMPL__/public/assets/images/kecheng/001.jpg" alt="《数据科学的数学、概率和统计》" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/default/2016/05-15/2253073d73ce463384.jpg" />
+                        </a>
+                        <div class="mask">
+
+                            <a href="/classroom/17" class="btn btn-warning">立即加入</a>
+                        </div>
+                    </div>
+                    <h3><a class="link-dark" href="/classroom/17">《数据科学的数学、概率和统计》</a></h3>
+                    <div class="metas">共有3门课程</div>
+                </div>          </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="class-item">
+                    <div class="class-img-wrap">
+                        <a class="class-img" href="/classroom/18">
+                            <img src="__TMPL__/public/assets/images/kecheng/001.jpg" alt="《数据分析和数据挖掘》第一期" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/default/2016/05-29/1632502b61fc662144.jpg" />
+                        </a>
+                        <div class="mask">
+
+                            <a href="/classroom/18" class="btn btn-warning">立即加入</a>
+                        </div>
+                    </div>
+                    <h3><a class="link-dark" href="/classroom/18">《数据分析和数据挖掘》第一期</a></h3>
+                    <div class="metas">共有2门课程</div>
+                </div>          </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="class-item">
+                    <div class="class-img-wrap">
+                        <a class="class-img" href="/classroom/24">
+                            <img src="__TMPL__/public/assets/images/kecheng/001.jpg" alt="《大数据平台之Linux、Java、Scala》" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/course/2016/08-24/121544033c08892051.jpg" />
+                        </a>
+                        <div class="mask">
+
+                            <a href="/classroom/24" class="btn btn-warning">立即加入</a>
+                        </div>
+                    </div>
+                    <h3><a class="link-dark" href="/classroom/24">《大数据平台之Linux、Java、Scala》</a></h3>
+                    <div class="metas">共有3门课程</div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="section-more-btn" style="text-align: center">
+            <a href="#">
+                更多课程
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- /container -->
+<include file="public@scripts"/>
+<script src="__TMPL__/public/assets/js/slippry.min.js"></script>
+<script>
+    $(function () {
+        $("#home-slider").slippry({
+            transition: 'fade',
+            useCSS: true,
+            captions: false,
+            speed: 1000,
+            pause: 3000,
+            auto: true,
+            preload: 'visible'
+        });
+        $("#home-slider").show();
+    });
+</script>
+<hook name="before_body_end"/>
+</body>
+</html>

@@ -1,0 +1,72 @@
+.main_content{ width:1200px; margin:0 auto; position:relative}
+.bor{ background:#fff; border:1px solid #e0e3e9; border-radius:3px;}
+.ad{ width:1200px; margin:0 auto 20px;}
+.submit{-webkit-appearance: none; }
+/*标题*/
+.caption { height: 68px; line-height: 68px; margin:100px 0 20px 0;}
+.caption .caption-lf { float: left }
+.caption .name { height:68px; display:block; float:left; font:28px "\5FAE\8F6F\96C5\9ED1"; line-height:68px; border-left:4px solid #e45c40; padding-left:30px;}
+.caption .name-t { border-bottom: 0; }
+.caption .other { color: #2e83cb; font-size: 15px; padding-left: 10px; }
+.caption .other:hover { color: #ee491f }
+.caption .caption-rt a{ float: right; color: #999; border-left:1px solid #f4f4f4; height:68px; padding:0 35px; }
+.caption .caption-rt i{ width:20px; height:20px; display:block; float:left; background: url(ks_icon01.png) no-repeat; margin:24px 10px 0 0;  transition:all .2s; -webkit-transition:all .2s;-moz-transition:all .2s;}
+.caption .caption-rt a:hover{color:#e45c40;}
+.caption .caption-rt a:hover i{ background-position:-26px 0 ;}
+
+
+/*普通分页-默认居中*/
+.lmj-page-main { height:28px; line-height: 25px; padding:20px 0px 25px 0; text-align: center; clear: both; font: bold 12px/25px Arial; color: #555;}
+.lmj-page-main * { display: inline-block; vertical-align: middle; }
+.lmj-page-main i{ padding:0 10px}
+.lmj-page-main a, .lmj-page-main b { display: inline-block; padding: 0px 9px; color: #333; background: #fff; border-radius:30px; border: 1px #ccc solid; height: 25px; margin: 0px 3px; font: bold 12px/25px Arial; color: #555; }
+.lmj-page-main b { border: none; color: #555; margin-right: 0px; }
+.lmj-page-main a.lmj-page-main-turn { display: inline-block; padding: 0px 12px; font: normal 12px/25px "\u5b8b\u4f53"; content: '\3C'; }
+.lmj-page-main a.lmj-page-main-turn:hover { background: #f0f0f0; color: #333; border: 1px #ddd solid; -moz-box-shadow: #f5f5f5 1px 1px 2px; -webkit-box-shadow: #f5f5f5 1px 1px 2px; box-shadow: #f5f5f5 1px 1px 2px; }
+.lmj-page-main a:hover { background: #f5f5f5; color: #333; }
+.lmj-page-main a.lmj-page-on, .lmj-page-main a.lmj-page-on:hover { background: #f06000; color: #FFF; border: 1px #f06000 solid; }
+.lmj-page-main .lmj-page-input { display: inline-block; border: 1px #ccc solid; border-radius:30px; width: 40px; padding: 0px 5px; height: 25px; line-height: 25px; color: #555; box-shadow: 0px 1px 1px 2px #f8f8f8 inset; overflow: hidden; margin-right: 5px; outline: none; text-align:center}
+.lmj-page-main .lmj-page-main-skip b { font-weight: normal; }
+.lmj-page-main .lmj-page-main-submit { font-weight: normal; }
+.btn-org { background-color: #f06000!important; border-color: #dc5800!important; color: #FFF!important }
+.btn-org:hover { background-color: #dc5800!important; border-color: #d15400!important; }
+.btn-green { background-color: #64ad75!important; border-color: #5ba36c!important; color: #FFF!important }
+.btn-green:hover { background-color: #549b65!important; border-color: #509861!important; }
+.pracl-dalist li .dal-but a.btn-org, .pracl-dalist li .dal-but a.btn-green { color: #fff!important }
+
+
+/*无数据*/
+.no-data{width:350px; margin:80px auto; font-size:15px; color:#999; line-height:30px; text-align:center;}
+.no-data img{ margin-right:15px;}
+.no-data a{ color:#e45c40;}
+.no-data a:hover{ color:#f7795b;}
+.no-data .noda-text{padding-top:10px;}
+/*footer*/
+#footer{font:12px/24px Arial;margin:0px auto;width:100%;  padding:40px 0; position:relative; z-index:2;}
+#footer .a2{margin:0px auto;text-align:center;color:#666;font:12px/24px Arial;word-spacing:6px;}
+#footer .a2 span{ float:none}
+#footer .a2 A:link,
+#footer .a2 A:visited{color:#333}
+#footer strong.cDRed{color:#d00;font-size:14px;font-weight:500;}
+#footer .a2 A:hover{COLOR:#ff0000;text-decoration:underline}
+#footer .a2 span{font-weight:normal;color:#999;word-spacing:0px;}
+/*ie6-ie8*/
+@media \0screen\,screen\9{
+  .main_content{ width:1000px; }
+  .ad,.ad img{width:1000px; height:auto}
+  #top-wrap .top-nav-wrap .tn-header{ width:1000px;}
+}
+/*宽度1000px*/
+@media screen and (max-width:1366px){
+  .main_content{ width:1000px;}
+  .ad{ width:1000px; height:auto;}
+  .ad img{ width:1000px; height:auto;}
+  #top-wrap .top-nav-wrap .tn-header{ width:1000px; }
+}
+/*宽度960px*/
+@media screen and (max-width:1000px){
+  .main_content{ width:960px;}
+  .ad{ width:960px; height:auto;}
+  .ad img{ width:960px; height:auto;}
+  #top-wrap .top-nav-wrap .tn-header{ width:960px;}
+}

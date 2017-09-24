@@ -1,0 +1,1510 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+<html lang="zh_CN" >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>小象学院 - 互联网新技术学习平台|人工智能|大数据|机器学习|深度学习|Python|Java|Hadoop|Spark|Linux|MySQL|数据分析</title>
+    <meta name="keywords" content="人工智能，机器学习，Hadoop，Hadoop培训，大数据技术，小象社区，HBase，Spark，大数据应用案例，在线教育" />
+    <meta name="description" content="中国最活跃、最专业的人工智能、大数据在线教育平台,专注于互联网新技术的应用推广,通过系列实战性培训课程,提供来自互联网一线公司专家的实战经验和应用案例" />
+    <meta content="JrPuNSzxqtOjcD1gWNRmQvMCO1kBnsZCXQ14fArgXn4" name="csrf-token" />
+    <meta content="0" name="is-login" />
+    <meta content="1" name="is-open" />
+    <meta property="qc:admins" content="3514001051630161014770636" />
+    <meta property="wb:webmaster" content="7143832026c0eaae" />
+    <link rel="icon" href="//scb1a9q0-sb.qiqiuyun.net/files/system/favicon_1405502134.ico?7.5.15.1" type="image/x-icon" />
+    <link rel="shortcut icon" href="//scb1a9q0-sb.qiqiuyun.net/files/system/favicon_1405502134.ico?7.5.15.1" type="image/x-icon" media="screen"/>
+
+
+    <link href="//scb1a9q0-sb.qiqiuyun.net/assets/v2/bootstrap/css/bootstrap-blue-light.css?7.5.15.1" rel="stylesheet" />
+
+    <link rel="stylesheet" media="screen" href="//scb1a9q0-sb.qiqiuyun.net/assets/css/common.css?7.5.15.1" />
+    <link rel="stylesheet" media="screen" href="//scb1a9q0-sb.qiqiuyun.net/assets/css/font-awesome.min.css?7.5.15.1" />
+    <link rel="stylesheet" media="screen" href="//scb1a9q0-sb.qiqiuyun.net/assets/v2/css/es-icon.css?7.5.15.1" />
+
+    <link href="//scb1a9q0-sb.qiqiuyun.net/assets/v2/css/main-blue-light.css?7.5.15.1" rel="stylesheet" />
+
+
+
+
+
+
+    <!--[if lt IE 9]>
+    <script src="//scb1a9q0-sb.qiqiuyun.net/assets/libs/html5shiv.js?7.5.15.1"></script>
+    <script src="//scb1a9q0-sb.qiqiuyun.net/assets/libs/respond.min.js?7.5.15.1"></script>
+    <![endif]-->
+
+
+</head>
+<body class="homepage">
+
+<div class="es-wrap">
+
+    <div class="alert alert-warning alert-notice announcements-alert hidden-xs" role="alert">
+        <div class="container swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <i class="es-icon es-icon-infooutline mrm"></i>
+                    <a style="color:#ff5e06" class="alert-link" href="https://tianchi.aliyun.com/competition/gameList.htm?spm=5176.100067.0.0.7c560628c1Wfgh" target="_blank">
+                        阿里云天池&amp;小象学院 ▶邀你参加「广东政务数据创新大赛」，近百万奖金等你来战！
+                    </a>
+                </div>
+
+            </div>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function baidusearch(id) {
+            var url = "http://zhannei.baidu.com/cse/search?s=83960727734992248&entry=1&q=" + encodeURIComponent(document.getElementById(id).value);
+            window.open(url,"_blank");
+        }
+        function coursesearch(id) {
+            var url = "/search" + "?q=" + encodeURIComponent(document.getElementById(id).value);
+            window.open(url,"_self");
+        }
+    </script>
+
+    <header class="es-header navbar">
+        <div class="navbar-header">
+            <div class="visible-xs  navbar-mobile">
+                <a href="javascript:;" class="navbar-more js-navbar-more">
+                    <i class="es-icon es-icon-menu"></i>
+                </a>
+                <div class="html-mask"></div>
+                <div class="nav-mobile">
+                    <form class="navbar-form" action="/search" method="get">
+                        <div class="form-group">
+                            <input class="form-control" placeholder="搜索" name="q">
+                            <button class="button es-icon es-icon-search"></button>
+                        </div>
+                    </form>
+
+                    <ul class="nav navbar-nav">
+
+                        <li class=" active ">
+                            <a href="/" >首页 </a>
+                        </li>
+                        <li class="">
+                            <a href="http://www.chinahadoop.cn/classroom/explore" target="_blank">选课中心 </a>
+                        </li>
+                        <li class="">
+                            <a href="http://wenda.chinahadoop.cn" target="_blank">小象问答 </a>
+                        </li>
+                        <li class="">
+                            <a href="http://zhaopin.chinahadoop.cn" target="_blank">小象招聘 </a>
+                        </li>
+                        <li class="">
+                            <a href="/course/explore/open" target="_blank">小象公开课 </a>
+                        </li>
+                        <li class="">
+                            <a href="/course/landpage/1" target="_blank">大数据平台训练营 </a>
+                        </li>
+                        <li class="">
+                            <a href="/course/landpage/2" target="_blank">机器学习训练营 </a>
+                        </li>
+                        <li class="">
+                            <a href="http://www.chinahadoop.cn/dcon/2015beijing/" target="_blank">DCon大会 </a>
+                        </li>
+                        <li class="">
+                            <a href="/page/lpenter" target="_blank">学习路线 </a>
+                        </li>          </ul>
+                </div>
+            </div>
+            <div class="M_header-back js-back">
+                <a><i class="es-icon es-icon-chevronleft"></i></a>
+            </div>
+            <a href="/" class="navbar-brand">
+                <img src="http://scb1a9q0-sb.qiqiuyun.net/files/../files/system/2017/07-14/1610317bb25f691996.png">
+            </a>
+        </div>
+        <nav class="collapse navbar-collapse">
+            <ul class="nav navbar-nav clearfix hidden-xs " id="nav">
+
+                <li class=" active ">
+                    <a href="/" >首页 </a>
+                </li>
+                <li class="">
+                    <a href="http://www.chinahadoop.cn/classroom/explore" target="_blank">选课中心 </a>
+                </li>
+                <li class="">
+                    <a href="http://wenda.chinahadoop.cn" target="_blank">小象问答 </a>
+                </li>
+                <li class="">
+                    <a href="http://zhaopin.chinahadoop.cn" target="_blank">小象招聘 </a>
+                </li>
+                <li class="">
+                    <a href="/course/explore/open" target="_blank">小象公开课 </a>
+                </li>          <li class="nav-more nav-hover">
+                <a class="more">
+                    <i class="es-icon es-icon-morehoriz"></i>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+
+                    <li class="">
+                        <a href="/course/landpage/1" target="_blank">大数据平台训练营 </a>
+                    </li>
+                    <li class="">
+                        <a href="/course/landpage/2" target="_blank">机器学习训练营 </a>
+                    </li>
+                    <li class="">
+                        <a href="http://www.chinahadoop.cn/dcon/2015beijing/" target="_blank">DCon大会 </a>
+                    </li>
+                    <li class="">
+                        <a href="/page/lpenter" target="_blank">学习路线 </a>
+                    </li>              </ul>
+            </li>
+
+
+
+
+            </ul>
+            <div class="navbar-user  left ">
+                <ul class="nav user-nav">
+                    <li class="user-avatar-li nav-hover visible-xs">
+                        <a href="javascript:;" class="dropdown-toggle">
+                            <img class="avatar-xs" src="//scb1a9q0-sb.qiqiuyun.net/assets/img/default/avatar.png?7.5.15.1">
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li class="user-nav-li-login"><a href="/login?goto=/">
+                                <i class="es-icon es-icon-denglu"></i>
+                                登录</a></li>
+                            <li class="user-nav-li-register"><a href="/register?goto=/">
+                                <i class="es-icon es-icon-zhuce"></i>
+                                注册</a></li>
+                            <li class="mobile-switch js-switch-mobile"><a href="javascript:;">
+                                <i class="es-icon es-icon-qiehuan"></i>
+                                切换触屏版</a></li>
+                        </ul>
+                    </li>
+                    <li class="hidden-xs"><a href="/login?goto=/">登录</a></li>
+                    <li class="hidden-xs"><a href="/register?goto=/">注册</a></li>
+                </ul>
+
+                <form class="navbar-form navbar-right hidden-xs hidden-sm" action="/search" method="get">
+                    <div class="form-group">
+                        <input class="form-control js-search" name="q" placeholder="搜课程">
+                        <button class="button es-icon es-icon-search"></button>
+                    </div>
+                </form>
+                <div class="navbar-form navbar-right hidden-xs hidden-sm">
+                    <div class="form-group">
+                        <input class="form-control js-full-search" name="q" placeholder="搜内容" id="fulltext-query" onkeypress="if(event.keyCode==13) {baidusearch('fulltext-query');}">
+                        <button class="button es-icon es-icon-search" onClick="baidusearch('fulltext-query');"></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="es-poster swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-hidden" style="background: #3F3F3F;">
+                <div>
+                    <a href="/classroom/58" target="_blank" >
+                        <img class="img-responsive" src="http://scb1a9q0-sb.qiqiuyun.net/files/system/2017/08-30/1134422438ef994038.png?7.5.15.1">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pager"></div>
+    </section>
+
+
+
+    <!-- 推荐班级 -->
+    <section class="class-section ">
+        <div class="container">
+            <div class="text-line">
+                <h5>
+                    <span>推荐课程</span>
+                    <div class="line"></div>
+                </h5>
+                <div class="subtitle">班级化学习体系，给你更多的课程相关服务。</div>
+            </div>
+            <div class="recommend-class-list row">
+                <div class="col-md-3 col-xs-6">
+                    <div class="class-item">
+                        <div class="class-img-wrap">
+                            <a class="class-img" href="/classroom/59">
+                                <img src="//scb1a9q0-sb.qiqiuyun.net/assets/img/default/lazyload_class.png?7.5.15.1" alt="《面试算法LeetCode刷题班》" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/course/2017/09-07/174327f9d521544093.png" />
+                            </a>
+                            <div class="mask">
+
+                                <a href="/classroom/59" class="btn btn-warning">立即加入</a>
+                            </div>
+                        </div>
+                        <h3><a class="link-dark" href="/classroom/59">《面试算法LeetCode刷题班》</a></h3>
+                        <div class="metas">共有3门课程</div>
+                    </div>          </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="class-item">
+                        <div class="class-img-wrap">
+                            <a class="class-img" href="/classroom/58">
+                                <img src="//scb1a9q0-sb.qiqiuyun.net/assets/img/default/lazyload_class.png?7.5.15.1" alt="《深度学习》第五期" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/course/2017/08-28/10144661b8b6898371.png" />
+                            </a>
+                            <div class="mask">
+
+                                <a href="/classroom/58" class="btn btn-warning">立即加入</a>
+                            </div>
+                        </div>
+                        <h3><a class="link-dark" href="/classroom/58">《深度学习》第五期</a></h3>
+                        <div class="metas">共有3门课程</div>
+                    </div>          </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="class-item">
+                        <div class="class-img-wrap">
+                            <a class="class-img" href="/classroom/57">
+                                <img src="//scb1a9q0-sb.qiqiuyun.net/assets/img/default/lazyload_class.png?7.5.15.1" alt="《BAT面试算法特训班》" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/course/2017/08-14/131454e3cc73024860.jpg" />
+                            </a>
+                            <div class="mask">
+
+                                <a href="/classroom/57" class="btn btn-warning">立即加入</a>
+                            </div>
+                        </div>
+                        <h3><a class="link-dark" href="/classroom/57">《BAT面试算法特训班》</a></h3>
+                        <div class="metas">共有3门课程</div>
+                    </div>          </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="class-item">
+                        <div class="class-img-wrap">
+                            <a class="class-img" href="/classroom/56">
+                                <img src="//scb1a9q0-sb.qiqiuyun.net/assets/img/default/lazyload_class.png?7.5.15.1" alt="《CTA投资与程序化交易》第一期" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/course/2017/07-31/182324c3f8b1412065.png" />
+                            </a>
+                            <div class="mask">
+
+                                <a href="/classroom/56" class="btn btn-warning">立即加入</a>
+                            </div>
+                        </div>
+                        <h3><a class="link-dark" href="/classroom/56">《CTA投资与程序化交易》第一期</a></h3>
+                        <div class="metas">共有3门课程</div>
+                    </div>          </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="class-item">
+                        <div class="class-img-wrap">
+                            <a class="class-img" href="/classroom/55">
+                                <img src="//scb1a9q0-sb.qiqiuyun.net/assets/img/default/lazyload_class.png?7.5.15.1" alt="《机器学习》升级版VI" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/course/2017/07-18/1808226c52f1301450.png" />
+                            </a>
+                            <div class="mask">
+
+                                <a href="/classroom/55" class="btn btn-warning">立即加入</a>
+                            </div>
+                        </div>
+                        <h3><a class="link-dark" href="/classroom/55">《机器学习》升级版VI</a></h3>
+                        <div class="metas">共有3门课程</div>
+                    </div>          </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="class-item">
+                        <div class="class-img-wrap">
+                            <a class="class-img" href="/classroom/17">
+                                <img src="//scb1a9q0-sb.qiqiuyun.net/assets/img/default/lazyload_class.png?7.5.15.1" alt="《数据科学的数学、概率和统计》" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/default/2016/05-15/2253073d73ce463384.jpg" />
+                            </a>
+                            <div class="mask">
+
+                                <a href="/classroom/17" class="btn btn-warning">立即加入</a>
+                            </div>
+                        </div>
+                        <h3><a class="link-dark" href="/classroom/17">《数据科学的数学、概率和统计》</a></h3>
+                        <div class="metas">共有3门课程</div>
+                    </div>          </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="class-item">
+                        <div class="class-img-wrap">
+                            <a class="class-img" href="/classroom/18">
+                                <img src="//scb1a9q0-sb.qiqiuyun.net/assets/img/default/lazyload_class.png?7.5.15.1" alt="《数据分析和数据挖掘》第一期" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/default/2016/05-29/1632502b61fc662144.jpg" />
+                            </a>
+                            <div class="mask">
+
+                                <a href="/classroom/18" class="btn btn-warning">立即加入</a>
+                            </div>
+                        </div>
+                        <h3><a class="link-dark" href="/classroom/18">《数据分析和数据挖掘》第一期</a></h3>
+                        <div class="metas">共有2门课程</div>
+                    </div>          </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="class-item">
+                        <div class="class-img-wrap">
+                            <a class="class-img" href="/classroom/24">
+                                <img src="//scb1a9q0-sb.qiqiuyun.net/assets/img/default/lazyload_class.png?7.5.15.1" alt="《大数据平台之Linux、Java、Scala》" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/course/2016/08-24/121544033c08892051.jpg" />
+                            </a>
+                            <div class="mask">
+
+                                <a href="/classroom/24" class="btn btn-warning">立即加入</a>
+                            </div>
+                        </div>
+                        <h3><a class="link-dark" href="/classroom/24">《大数据平台之Linux、Java、Scala》</a></h3>
+                        <div class="metas">共有3门课程</div>
+                    </div>          </div>
+            </div>
+            <div class="section-more-btn">
+                <a href="/classroom/explore" class="btn btn-default btn-lg">
+                    更多班级 <i class="mrs-o es-icon es-icon-chevronright"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="course-list-section " id="course-list-section">
+
+        <div class="container">
+            <div class="text-line">
+                <h5><span>精品课程</span><div class="line"></div></h5>
+                <div class="subtitle">精选网校课程，满足你的学习兴趣。</div>
+            </div>
+            <div class="course-filter" id="course-filter">
+                <ul class="nav nav-pills hidden-xs" role="tablist">
+                    <li role="presentation" class="active  js-course-filter" data-url="/course/search?categoryId=4&amp;orderBy=latest" data-type="course"><a href="javascript:;">公开课</a></li>
+                    <li role="presentation" class=" js-course-filter" data-url="/course/search?categoryId=82&amp;orderBy=latest" data-type="course"><a href="javascript:;">人工智能</a></li>
+                    <li role="presentation" class=" js-course-filter" data-url="/course/search?categoryId=26&amp;orderBy=latest" data-type="course"><a href="javascript:;">大数据平台开发与管理</a></li>
+                    <li role="presentation" class=" js-course-filter" data-url="/course/search?categoryId=58&amp;orderBy=latest" data-type="course"><a href="javascript:;">数据分析与挖掘</a></li>
+                    <li role="presentation" class=" js-course-filter" data-url="/course/search?categoryId=38&amp;orderBy=latest" data-type="course"><a href="javascript:;">基础课程</a></li>
+                    <li role="presentation" class=" js-course-filter" data-url="/course/search?categoryId=31&amp;orderBy=latest" data-type="course"><a href="javascript:;">云计算</a></li>
+                    <li class="dropdown nav-hover">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">
+                            <i class="es-icon es-icon-morehoriz"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li role="presentation" class=" js-course-filter" data-url="/course/search?categoryId=57&amp;orderBy=latest" data-type="course"><a href="javascript:;">训练营</a></li>
+                            <li role="presentation" class=" js-course-filter" data-url="/course/search?categoryId=93&amp;orderBy=latest" data-type="course"><a href="javascript:;">小程序</a></li>
+                            <li role="presentation" class=" js-course-filter" data-url="/course/search?categoryId=24&amp;orderBy=latest" data-type="course"><a href="javascript:;">高校合作专区</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="btn-group visible-xs">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">全部课程 <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li role="presentation" class="js-course-filter " data-url="/course/search?orderBy=latest" data-type="course"><a href="javascript:;">全部课程</a></li>
+                        <li role="presentation" class = "js-course-filter active " data-url="/course/search?categoryId=4&amp;orderBy=latest" data-type="course"><a href="javascript:;">公开课</a></li>
+                        <li role="presentation" class = "js-course-filter " data-url="/course/search?categoryId=82&amp;orderBy=latest" data-type="course"><a href="javascript:;">人工智能</a></li>
+                        <li role="presentation" class = "js-course-filter " data-url="/course/search?categoryId=26&amp;orderBy=latest" data-type="course"><a href="javascript:;">大数据平台开发与管理</a></li>
+                        <li role="presentation" class = "js-course-filter " data-url="/course/search?categoryId=58&amp;orderBy=latest" data-type="course"><a href="javascript:;">数据分析与挖掘</a></li>
+                        <li role="presentation" class = "js-course-filter " data-url="/course/search?categoryId=38&amp;orderBy=latest" data-type="course"><a href="javascript:;">基础课程</a></li>
+                        <li role="presentation" class = "js-course-filter " data-url="/course/search?categoryId=31&amp;orderBy=latest" data-type="course"><a href="javascript:;">云计算</a></li>
+                        <li role="presentation" class = "js-course-filteractive" data-type="course"><a href="/course/explore">更多</a></li>
+                    </ul>
+                </div>
+                <div class="course-sort btn-group">
+                    <a href="javascript:;" class="btn btn-default  active js-course-filter" data-url="/course/search?categoryId=4&amp;orderBy=latest" data-type='course'>
+                        最新
+                    </a>
+                    <a href="javascript:;" class="btn btn-default js-course-filter" data-url="/course/search?categoryId=4&amp;orderBy=studentNum" data-type='course'>
+                        最热
+                    </a>
+                    <a href="javascript:;" class="btn btn-default js-course-filter" data-url="/course/search?categoryId=4&amp;orderBy=recommendedSeq" data-type='course'>
+                        推荐
+                    </a>
+                </div>
+            </div>
+            <div class="course-list">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="course-item">
+                            <div class="course-img">
+                                <a href="/course/1039" target="_blank">
+                                    <img src="//scb1a9q0-sb.qiqiuyun.net/assets/img/default/lazyload_course.png?7.5.15.1" alt="算法与数据结构中的面试与刷题" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/course/2017/09-08/1104408d003c802546.png" />
+                                </a>
+                            </div>
+                            <div class="course-info">
+                                <div class="title">
+                                    <a class="link-dark" href="/course/1039" target="_blank">
+                                        算法与数据结构中的面试与刷题
+                                    </a>
+                                </div>
+                                <div class="metas clearfix">
+            
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">免费</span>  
+                        </span>
+    
+    
+  </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="course-item">
+                            <div class="course-img">
+                                <a href="/course/1038" target="_blank">
+                                    <img src="//scb1a9q0-sb.qiqiuyun.net/assets/img/default/lazyload_course.png?7.5.15.1" alt="深度学习中的序列模型" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/course/2017/09-08/1014179e9a73159521.png" />
+                                </a>
+                            </div>
+                            <div class="course-info">
+                                <div class="title">
+                                    <a class="link-dark" href="/course/1038" target="_blank">
+                                        深度学习中的序列模型
+                                    </a>
+                                </div>
+                                <div class="metas clearfix">
+            
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">免费</span>  
+                        </span>
+    
+    
+  </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="course-item">
+                            <div class="course-img">
+                                <a href="/course/1020" target="_blank">
+                                    <img src="//scb1a9q0-sb.qiqiuyun.net/assets/img/default/lazyload_course.png?7.5.15.1" alt="详解动态规划与隐马尔科夫模型" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/course/2017/08-28/100310ebba0c430912.png" />
+                                </a>
+                            </div>
+                            <div class="course-info">
+                                <div class="title">
+                                    <a class="link-dark" href="/course/1020" target="_blank">
+                                        详解动态规划与隐马尔科夫模型
+                                    </a>
+                                </div>
+                                <div class="metas clearfix">
+            
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">免费</span>  
+                        </span>
+    
+    
+  </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="course-item">
+                            <div class="course-img">
+                                <a href="/course/1017" target="_blank">
+                                    <img src="//scb1a9q0-sb.qiqiuyun.net/assets/img/default/lazyload_course.png?7.5.15.1" alt="普通程序员如何转型到人工智能领域" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/course/2017/08-20/151315bd144f214510.png" />
+                                </a>
+                            </div>
+                            <div class="course-info">
+                                <div class="title">
+                                    <a class="link-dark" href="/course/1017" target="_blank">
+                                        普通程序员如何转型到人工智能领域
+                                    </a>
+                                </div>
+                                <div class="metas clearfix">
+            
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">免费</span>  
+                        </span>
+    
+    
+  </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="course-item">
+                            <div class="course-img">
+                                <a href="/course/1006" target="_blank">
+                                    <img src="//scb1a9q0-sb.qiqiuyun.net/assets/img/default/lazyload_course.png?7.5.15.1" alt="量化投资与机器学习" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/course/2017/08-14/15080555a1c6204915.png" />
+                                </a>
+                            </div>
+                            <div class="course-info">
+                                <div class="title">
+                                    <a class="link-dark" href="/course/1006" target="_blank">
+                                        量化投资与机器学习
+                                    </a>
+                                </div>
+                                <div class="metas clearfix">
+            
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">免费</span>  
+                        </span>
+    
+    
+  </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="course-item">
+                            <div class="course-img">
+                                <a href="/course/988" target="_blank">
+                                    <img src="//scb1a9q0-sb.qiqiuyun.net/assets/img/default/lazyload_course.png?7.5.15.1" alt="机器学习与项目实践" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/course/2017/07-31/093828465184448244.png" />
+                                </a>
+                            </div>
+                            <div class="course-info">
+                                <div class="title">
+                                    <a class="link-dark" href="/course/988" target="_blank">
+                                        机器学习与项目实践
+                                    </a>
+                                </div>
+                                <div class="metas clearfix">
+            
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">免费</span>  
+                        </span>
+    
+    
+  </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="course-item">
+                            <div class="course-img">
+                                <a href="/course/986" target="_blank">
+                                    <img src="//scb1a9q0-sb.qiqiuyun.net/assets/img/default/lazyload_course.png?7.5.15.1" alt="实用机器学习方法——集成学习" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/course/2017/07-26/163127f408d7292338.jpg" />
+                                </a>
+                            </div>
+                            <div class="course-info">
+                                <div class="title">
+                                    <a class="link-dark" href="/course/986" target="_blank">
+                                        实用机器学习方法——集成学习
+                                    </a>
+                                </div>
+                                <div class="metas clearfix">
+            
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">免费</span>  
+                        </span>
+    
+    
+  </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="course-item">
+                            <div class="course-img">
+                                <a href="/course/985" target="_blank">
+                                    <img src="//scb1a9q0-sb.qiqiuyun.net/assets/img/default/lazyload_course.png?7.5.15.1" alt="1小时入门朴素贝叶斯" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/course/2017/07-20/004236c67b1d960212.jpg" />
+                                </a>
+                            </div>
+                            <div class="course-info">
+                                <div class="title">
+                                    <a class="link-dark" href="/course/985" target="_blank">
+                                        1小时入门朴素贝叶斯
+                                    </a>
+                                </div>
+                                <div class="metas clearfix">
+            
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">免费</span>  
+                        </span>
+    
+    
+  </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="course-item">
+                            <div class="course-img">
+                                <a href="/course/946" target="_blank">
+                                    <img src="//scb1a9q0-sb.qiqiuyun.net/assets/img/default/lazyload_course.png?7.5.15.1" alt="从零开始爬取Wikipedia" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/course/2017/06-07/141316c2a046749346.png" />
+                                </a>
+                            </div>
+                            <div class="course-info">
+                                <div class="title">
+                                    <a class="link-dark" href="/course/946" target="_blank">
+                                        从零开始爬取Wikipedia
+                                    </a>
+                                </div>
+                                <div class="metas clearfix">
+            
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">免费</span>  
+                        </span>
+    
+    
+  </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="course-item">
+                            <div class="course-img">
+                                <a href="/course/945" target="_blank">
+                                    <img src="//scb1a9q0-sb.qiqiuyun.net/assets/img/default/lazyload_course.png?7.5.15.1" alt="Python数据分析之金融欺诈行为检测" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/course/2017/05-26/101051bcfd54677446.png" />
+                                </a>
+                            </div>
+                            <div class="course-info">
+                                <div class="title">
+                                    <a class="link-dark" href="/course/945" target="_blank">
+                                        Python数据分析之金融欺诈行为检测
+                                    </a>
+                                </div>
+                                <div class="metas clearfix">
+            
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">免费</span>  
+                        </span>
+    
+    
+  </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="course-item">
+                            <div class="course-img">
+                                <a href="/course/931" target="_blank">
+                                    <img src="//scb1a9q0-sb.qiqiuyun.net/assets/img/default/lazyload_course.png?7.5.15.1" alt="机器学习的代码实践" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/course/2017/05-17/1003175c847b627681.png" />
+                                </a>
+                            </div>
+                            <div class="course-info">
+                                <div class="title">
+                                    <a class="link-dark" href="/course/931" target="_blank">
+                                        机器学习的代码实践
+                                    </a>
+                                </div>
+                                <div class="metas clearfix">
+            
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">免费</span>  
+                        </span>
+    
+    
+  </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="course-item">
+                            <div class="course-img">
+                                <a href="/course/929" target="_blank">
+                                    <img src="//scb1a9q0-sb.qiqiuyun.net/assets/img/default/lazyload_course.png?7.5.15.1" alt="教机器说话--语言模型" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/course/2017/05-11/11131392b360379698.png" />
+                                </a>
+                            </div>
+                            <div class="course-info">
+                                <div class="title">
+                                    <a class="link-dark" href="/course/929" target="_blank">
+                                        教机器说话--语言模型
+                                    </a>
+                                </div>
+                                <div class="metas clearfix">
+            
+
+<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">免费</span>  
+                        </span>
+    
+    
+  </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-more-btn">
+                <a href="/course/explore/best" class="btn btn-default btn-lg">
+                    更多课程 <i class="mrs-o es-icon es-icon-chevronright"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="recommend-teacher ">
+        <div class="container">
+            <div class="text-line">
+                <h5><span>推荐教师</span><div class="line"></div></h5>
+                <div class="subtitle">名师汇集，保证教学质量与学习效果。</div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-xs-6">
+                    <div class="teacher-item">
+                        <div class="teacher-top">
+                            <a class="teacher-img" href="/user/688">
+                                <img class="avatar-lg" src="http://scb1a9q0-sb.qiqiuyun.net/files/user/2014/01-18/161723391e0b155220.png" alt="">
+                            </a>
+                            <h3 class="title">
+                                <a class="link-dark" href="/user/688">CrazyJvm</a>
+                            </h3>
+                            <div class="position">
+                                暂无头衔
+                            </div>
+                        </div>
+                        <div class="teacher-bottom">
+                            <div class="about">
+                                陈超 Apache顶级项目Spark的Contributor...
+                            </div>
+                            <div class="metas">
+                                <a class="btn btn-primary btn-sm follow-btn" href="javascript:;" data-url="/user/688/follow"  data-loggedin="0">关注</a>
+                                <a class="btn btn-default btn-sm unfollow-btn" href="javascript:;" data-url="/user/688/unfollow"  style="display:none;" >已关注</a>
+                                <a class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal" data-backdrop="static"  data-url="/message/create/688">私信</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="teacher-item">
+                        <div class="teacher-top">
+                            <a class="teacher-img" href="/user/94">
+                                <img class="avatar-lg" src="http://scb1a9q0-sb.qiqiuyun.net/files/user/2014/02-25/095926e13764411234.jpg" alt="">
+                            </a>
+                            <h3 class="title">
+                                <a class="link-dark" href="/user/94">Dong</a>
+                            </h3>
+                            <div class="position">
+                                暂无头衔
+                            </div>
+                        </div>
+                        <div class="teacher-bottom">
+                            <div class="about">
+                                资深Hadoop技术实践者和研究者，对Hadoop技术有非常...
+                            </div>
+                            <div class="metas">
+                                <a class="btn btn-primary btn-sm follow-btn" href="javascript:;" data-url="/user/94/follow"  data-loggedin="0">关注</a>
+                                <a class="btn btn-default btn-sm unfollow-btn" href="javascript:;" data-url="/user/94/unfollow"  style="display:none;" >已关注</a>
+                                <a class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal" data-backdrop="static"  data-url="/message/create/94">私信</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="teacher-item">
+                        <div class="teacher-top">
+                            <a class="teacher-img" href="/user/12847">
+                                <img class="avatar-lg" src="http://scb1a9q0-sb.qiqiuyun.net/files/user/2014/11-11/23510592cb1e030188.png" alt="">
+                            </a>
+                            <h3 class="title">
+                                <a class="link-dark" href="/user/12847">liup</a>
+                            </h3>
+                            <div class="position">
+                                暂无头衔
+                            </div>
+                        </div>
+                        <div class="teacher-bottom">
+                            <div class="about">
+                                刘鹏，奇虎360商业产品首席架构师，负责360的变现产品及工...
+                            </div>
+                            <div class="metas">
+                                <a class="btn btn-primary btn-sm follow-btn" href="javascript:;" data-url="/user/12847/follow"  data-loggedin="0">关注</a>
+                                <a class="btn btn-default btn-sm unfollow-btn" href="javascript:;" data-url="/user/12847/unfollow"  style="display:none;" >已关注</a>
+                                <a class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal" data-backdrop="static"  data-url="/message/create/12847">私信</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="teacher-item">
+                        <div class="teacher-top">
+                            <a class="teacher-img" href="/user/54027">
+                                <img class="avatar-lg" src="http://scb1a9q0-sb.qiqiuyun.net/files/user/2016/11-20/191841131b4e793138.JPG" alt="">
+                            </a>
+                            <h3 class="title">
+                                <a class="link-dark" href="/user/54027">李虎翼</a>
+                            </h3>
+                            <div class="position">
+                                暂无头衔
+                            </div>
+                        </div>
+                        <div class="teacher-bottom">
+                            <div class="about">
+                                Hello, Hadoop
+                            </div>
+                            <div class="metas">
+                                <a class="btn btn-primary btn-sm follow-btn" href="javascript:;" data-url="/user/54027/follow"  data-loggedin="0">关注</a>
+                                <a class="btn btn-default btn-sm unfollow-btn" href="javascript:;" data-url="/user/54027/unfollow"  style="display:none;" >已关注</a>
+                                <a class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal" data-backdrop="static"  data-url="/message/create/54027">私信</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="teacher-item">
+                        <div class="teacher-top">
+                            <a class="teacher-img" href="/user/25382">
+                                <img class="avatar-lg" src="http://scb1a9q0-sb.qiqiuyun.net/files/default/2016/06-02/151350e18594111628.jpg" alt="">
+                            </a>
+                            <h3 class="title">
+                                <a class="link-dark" href="/user/25382">邹博</a>
+                            </h3>
+                            <div class="position">
+                                暂无头衔
+                            </div>
+                        </div>
+                        <div class="teacher-bottom">
+                            <div class="about">
+                                邹博，计算机博士，现科学院从事科研教学工作，位智金融专家组成...
+                            </div>
+                            <div class="metas">
+                                <a class="btn btn-primary btn-sm follow-btn" href="javascript:;" data-url="/user/25382/follow"  data-loggedin="0">关注</a>
+                                <a class="btn btn-default btn-sm unfollow-btn" href="javascript:;" data-url="/user/25382/unfollow"  style="display:none;" >已关注</a>
+                                <a class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal" data-backdrop="static"  data-url="/message/create/25382">私信</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="teacher-item">
+                        <div class="teacher-top">
+                            <a class="teacher-img" href="/user/3960">
+                                <img class="avatar-lg" src="http://scb1a9q0-sb.qiqiuyun.net/files/user/2014/05-11/094845dd46cc253302.PNG" alt="">
+                            </a>
+                            <h3 class="title">
+                                <a class="link-dark" href="/user/3960">cador</a>
+                            </h3>
+                            <div class="position">
+                                暂无头衔
+                            </div>
+                        </div>
+                        <div class="teacher-bottom">
+                            <div class="about">
+                                数据分析师，在互联网/电信/电力领域具有丰富的建模经验，精通...
+                            </div>
+                            <div class="metas">
+                                <a class="btn btn-primary btn-sm follow-btn" href="javascript:;" data-url="/user/3960/follow"  data-loggedin="0">关注</a>
+                                <a class="btn btn-default btn-sm unfollow-btn" href="javascript:;" data-url="/user/3960/unfollow"  style="display:none;" >已关注</a>
+                                <a class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal" data-backdrop="static"  data-url="/message/create/3960">私信</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="teacher-item">
+                        <div class="teacher-top">
+                            <a class="teacher-img" href="/user/7287">
+                                <img class="avatar-lg" src="http://scb1a9q0-sb.qiqiuyun.net/files/user/2015/02-07/130011b09c90156623.png" alt="">
+                            </a>
+                            <h3 class="title">
+                                <a class="link-dark" href="/user/7287">xiaokang</a>
+                            </h3>
+                            <div class="position">
+                                暂无头衔
+                            </div>
+                        </div>
+                        <div class="teacher-bottom">
+                            <div class="about">
+                                肖康  2009年开始从事Hadoop分布式系统研发工作，熟...
+                            </div>
+                            <div class="metas">
+                                <a class="btn btn-primary btn-sm follow-btn" href="javascript:;" data-url="/user/7287/follow"  data-loggedin="0">关注</a>
+                                <a class="btn btn-default btn-sm unfollow-btn" href="javascript:;" data-url="/user/7287/unfollow"  style="display:none;" >已关注</a>
+                                <a class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal" data-backdrop="static"  data-url="/message/create/7287">私信</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="teacher-item">
+                        <div class="teacher-top">
+                            <a class="teacher-img" href="/user/8580">
+                                <img class="avatar-lg" src="http://scb1a9q0-sb.qiqiuyun.net/files/user/2014/09-07/1508320684da859366.jpg" alt="">
+                            </a>
+                            <h3 class="title">
+                                <a class="link-dark" href="/user/8580">mopishv0</a>
+                            </h3>
+                            <div class="position">
+                                高级开发工程师
+                            </div>
+                        </div>
+                        <div class="teacher-bottom">
+                            <div class="about">
+                                从事HBase与自有分布式key-value存储相关的开发及...
+                            </div>
+                            <div class="metas">
+                                <a class="btn btn-primary btn-sm follow-btn" href="javascript:;" data-url="/user/8580/follow"  data-loggedin="0">关注</a>
+                                <a class="btn btn-default btn-sm unfollow-btn" href="javascript:;" data-url="/user/8580/unfollow"  style="display:none;" >已关注</a>
+                                <a class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal" data-backdrop="static"  data-url="/message/create/8580">私信</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-more-btn">
+                <a href="/teacher" class="btn btn-default btn-lg">
+                    更多教师 <i class="mrs-o es-icon es-icon-chevronright"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 小组动态 -->
+    <section class="dynamic-section ">
+        <div class="container">
+            <div class="text-line gray">
+                <h5><span>动态</span><div class="line"></div></h5>
+                <div class="subtitle">关注同学动态 结交更多朋友</div>
+            </div>
+            <div class="dynamic-section-main row">
+                <div class="col-md-6">
+                    <div class="panel panel-default index-evaluate">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                学员评价
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="media media-dynamic">
+                                <div class="media-left">
+                                    <a class=" js-user-card" href="/user/83054" data-card-url="/user/83054/card/show" data-user-id="83054">
+                                        <img class="avatar-sm" src="http://scb1a9q0-sb.qiqiuyun.net/files/2015/05-08/largeavatar8b2f154d.jpg">
+
+                                    </a>
+
+                                </div>
+                                <div class="media-body">
+                                    <div class="title text-sm">
+                                        <a class="link-dark link-light" href="/user/83054">wk_mike</a>
+
+                                        <span class="score">
+            <i class="es-icon es-icon-star color-warning"></i>
+          <i class="es-icon es-icon-star color-warning"></i>
+          <i class="es-icon es-icon-star color-warning"></i>
+          <i class="es-icon es-icon-star color-warning"></i>
+          <i class="es-icon es-icon-star color-warning"></i>
+      
+  
+  </span>
+                                        发布于 <a class="link-light" href="/course/997">《《Python编程》...》</a>
+                                    </div>
+                                    <div class="content gray-darker">
+                                        想要下载代码，能提供吗？...
+                                    </div>
+                                    <span class="date">4天前</span>
+                                </div>
+                            </div>
+                            <div class="media media-dynamic">
+                                <div class="media-left">
+                                    <a class=" js-user-card" href="/user/92427" data-card-url="/user/92427/card/show" data-user-id="92427">
+                                        <img class="avatar-sm" src="http://scb1a9q0-sb.qiqiuyun.net/files/default/2017/08-27/081852c0ac07881818.jpg">
+
+                                    </a>
+
+                                </div>
+                                <div class="media-body">
+                                    <div class="title text-sm">
+                                        <a class="link-dark link-light" href="/user/92427">李永博</a>
+
+                                        <span class="score">
+            <i class="es-icon es-icon-star color-warning"></i>
+          <i class="es-icon es-icon-star color-warning"></i>
+          <i class="es-icon es-icon-star color-warning"></i>
+          <i class="es-icon es-icon-star color-warning"></i>
+          <i class="es-icon es-icon-star color-warning"></i>
+      
+  
+  </span>
+                                        发布于 <a class="link-light" href="/course/1003">《《BAT面试算法特训...》</a>
+                                    </div>
+                                    <div class="content gray-darker">
+                                        第二个课时的字符串处理视频不完整。能再重新上传下吗...
+                                    </div>
+                                    <span class="date">7天前</span>
+                                </div>
+                            </div>
+                            <div class="media media-dynamic">
+                                <div class="media-left">
+                                    <a class=" js-user-card" href="/user/85848" data-card-url="/user/85848/card/show" data-user-id="85848">
+                                        <img class="avatar-sm" src="http://scb1a9q0-sb.qiqiuyun.net/files/default/2017/08-10/131317d482cf582407.jpg">
+
+                                    </a>
+
+                                </div>
+                                <div class="media-body">
+                                    <div class="title text-sm">
+                                        <a class="link-dark link-light" href="/user/85848">阿木寺</a>
+
+                                        <span class="score">
+            <i class="es-icon es-icon-star color-warning"></i>
+          <i class="es-icon es-icon-star color-warning"></i>
+          <i class="es-icon es-icon-star color-warning"></i>
+          <i class="es-icon es-icon-star color-warning"></i>
+          <i class="es-icon es-icon-star color-warning"></i>
+      
+  
+  </span>
+                                        发布于 <a class="link-light" href="/course/918">《怎样学习深度学习...》</a>
+                                    </div>
+                                    <div class="content gray-darker">
+                                        老师讲解的很好，适合入门~...
+                                    </div>
+                                    <span class="date">15天前</span>
+                                </div>
+                            </div>
+                            <div class="media media-dynamic">
+                                <div class="media-left">
+                                    <a class=" js-user-card" href="/user/77712" data-card-url="/user/77712/card/show" data-user-id="77712">
+                                        <img class="avatar-sm" src="http://scb1a9q0-sb.qiqiuyun.net/files/default/2017/06-06/11154623e28b105187.jpg">
+
+                                    </a>
+
+                                </div>
+                                <div class="media-body">
+                                    <div class="title text-sm">
+                                        <a class="link-dark link-light" href="/user/77712">cwyxy54</a>
+
+                                        <span class="score">
+            <i class="es-icon es-icon-star color-warning"></i>
+          <i class="es-icon es-icon-star color-warning"></i>
+          <i class="es-icon es-icon-star color-warning"></i>
+          <i class="es-icon es-icon-star color-warning"></i>
+          <i class="es-icon es-icon-star color-warning"></i>
+      
+  
+  </span>
+                                        发布于 <a class="link-light" href="/course/982">《《机器学习》升级版V...》</a>
+                                    </div>
+                                    <div class="content gray-darker">
+                                        7 和8 的代码呢
+                                    </div>
+                                    <span class="date">15天前</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-default index-dynamic">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                学员动态
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+
+                            <div class="media media-dynamic">
+                                <div class="media-left">
+                                    <a class=" js-user-card" href="/user/93762" data-card-url="/user/93762/card/show" data-user-id="93762">
+                                        <img class="avatar-sm" src="http://scb1a9q0-sb.qiqiuyun.net/files/default/2017/09-07/04542841cfc2435432.jpg">
+
+                                    </a>
+
+                                </div>
+                                <div class="media-body">
+                                    <div class="title">
+                                        <a class="link-dark " href="/user/93762">陈澎</a>
+
+                                    </div>
+                                    <div class="content">
+
+                                        开始学习课时 <a class="link-dark" href="/course/1025" title="来自《《深度学习》第五期：回放&amp;资料下载》">视频-第一讲-深度学习总体介绍...</a>
+
+                                    </div>
+                                    <span class="date">8秒前</span>
+                                </div>
+                            </div>
+                            <div class="media media-dynamic">
+                                <div class="media-left">
+                                    <a class=" js-user-card" href="/user/20730" data-card-url="/user/20730/card/show" data-user-id="20730">
+                                        <img class="avatar-sm" src="http://scb1a9q0-sb.qiqiuyun.net/files/user/2016/10-31/1008375080d8647858.JPG">
+
+                                    </a>
+
+                                </div>
+                                <div class="media-body">
+                                    <div class="title">
+                                        <a class="link-dark " href="/user/20730">Harley</a>
+
+                                    </div>
+                                    <div class="content">
+
+                                        学完了课时 <a class="link-dark" href="/course/37" title="来自《《大数据之Scala编程》》">Part-1</a>
+
+                                    </div>
+                                    <span class="date">9秒前</span>
+                                </div>
+                            </div>
+                            <div class="media media-dynamic">
+                                <div class="media-left">
+                                    <a class=" js-user-card" href="/user/67525" data-card-url="/user/67525/card/show" data-user-id="67525">
+                                        <img class="avatar-sm" src="http://scb1a9q0-sb.qiqiuyun.net/files/default/2017/03-22/090723b33e2e565492.jpg">
+
+                                    </a>
+
+                                </div>
+                                <div class="media-body">
+                                    <div class="title">
+                                        <a class="link-dark " href="/user/67525">Wanp2005</a>
+
+                                    </div>
+                                    <div class="content">
+
+                                        开始学习课时 <a class="link-dark" href="/course/591" title="来自《数据科学的数学基础》">1.4 行列式按k行展开</a>
+
+                                    </div>
+                                    <span class="date">57秒前</span>
+                                </div>
+                            </div>
+                            <div class="media media-dynamic">
+                                <div class="media-left">
+                                    <a class=" js-user-card" href="/user/13896" data-card-url="/user/13896/card/show" data-user-id="13896">
+                                        <img class="avatar-sm" src="http://scb1a9q0-sb.qiqiuyun.net/files/2015/05-08/largeavatar8b2f154d.jpg">
+
+                                    </a>
+
+                                </div>
+                                <div class="media-body">
+                                    <div class="title">
+                                        <a class="link-dark " href="/user/13896">gloomx</a>
+
+                                    </div>
+                                    <div class="content">
+
+                                        开始学习课时 <a class="link-dark" href="/course/1026" title="来自《《深度学习》第五期：QQ群，上课时间、链接、乱码，APP，发票，问答》">参课须知：班级QQ群，上课时间...</a>
+
+                                    </div>
+                                    <span class="date">2分钟前</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="footer-tool-bar">
+        <div class="active">
+            <a href="/">
+                <i class="es-icon es-icon-home1"></i><br>
+                首页
+            </a>
+        </div>
+        <div class="">
+            <a href="/my/classrooms">
+                <i class="es-icon es-icon-newshot"></i><br>
+                班级
+            </a>
+        </div>
+        <div class="">
+            <a href="/my/courses/learning">
+                <i class="es-icon es-icon-write"></i><br>
+                课程
+            </a>
+        </div>
+    </div>
+
+    <div class="es-footer-link">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-8 footer-main clearfix">
+                    <div class="link-item ">
+                        <h3>我是学生</h3>
+                        <ul>
+                            <li>
+                                <a href="http://wenda.chinahadoop.cn" target="_blank">如何提问</a>
+                            </li>
+                            <li>
+                                <a href="http://www.chinahadoop.cn/page/lpenter" target="_blank">学习路线</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="link-item ">
+                        <h3>我是老师</h3>
+                        <ul>
+                            <li>
+                                <a href="http://www.chinahadoop.cn/page/releaseclass" target="_blank">如何发布课程</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="link-item ">
+                        <h3>账户管理</h3>
+                        <ul>
+                            <li>
+                                <a href="http://www.chinahadoop.cn/settings/email" target="_blank">修改邮箱</a>
+                            </li>
+                            <li>
+                                <a href="http://www.chinahadoop.cn/password/reset" target="_blank">找回密码</a>
+                            </li>
+                            <li>
+                                <a href="http://www.chinahadoop.cn/settings/avatar" target="_blank">设置头像</a>
+                            </li>
+                            <li>
+                                <a href="http://www.chinahadoop.cn/settings/approval/submit" target="_self">实名认证</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="link-item hidden-xs">
+                        <h3>新手指南</h3>
+                        <ul>
+                            <li>
+                                <a href="http://www.chinahadoop.cn/page/28" target="_blank">课程码使用方法</a>
+                            </li>
+                            <li>
+                                <a href="http://www.chinahadoop.cn/page/agreement" target="_self">用户服务使用协议</a>
+                            </li>
+                            <li>
+                                <a href="http://www.chinahadoop.cn/page/questions" target="_self">常见问题</a>
+                            </li>
+                            <li>
+                                <a href="http://www.chinahadoop.cn/page/aboutus" target="_self">关于我们</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="link-item hidden-xs">
+                        <h3>友情链接</h3>
+                        <ul>
+                            <li>
+                                <a href="http://wenda.chinahadoop.cn/" target="_blank">小象问答</a>
+                            </li>
+                            <li>
+                                <a href="http://dongxicheng.org/" target="_blank">董的博客</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 footer-logo hidden-sm hidden-xs">
+                    <a class="" href="http://www.chinahadoop.cn" target="_blank"><img src="//scb1a9q0-sb.qiqiuyun.net/files/system/block_picture_1472461810.png?7.5.15.1" alt="建议图片大小为233*64"></a>
+                    <div class="footer-sns">
+                        <a href="http://weibo.com/chinahadoop" target="_blank"><i class="es-icon es-icon-weibo"></i></a>
+                        <a class="qrcode-popover top">
+                            <i class="es-icon es-icon-weixin"></i>
+                            <div class="qrcode-content">
+                                <img src="//scb1a9q0-sb.qiqiuyun.net/files/system/block_picture_1472472380.jpg?7.5.15.1" alt="">
+                            </div>
+                        </a>
+                        <a class="qrcode-popover top">
+                            <i class="es-icon es-icon-apple"></i>
+                            <div class="qrcode-content">
+                                <img src="//scb1a9q0-sb.qiqiuyun.net/files/system/block_picture_1481630430.png?7.5.15.1" alt="">
+                            </div>
+                        </a>
+                        <a class="qrcode-popover top">
+                            <i class="es-icon es-icon-android"></i>
+                            <div class="qrcode-content">
+                                <img src="//scb1a9q0-sb.qiqiuyun.net/files/system/block_picture_1490343740.png?7.5.15.1" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <footer class="es-footer">
+        <div class="copyright">
+            <div class="container">
+                <font color="white">新浪微博：</font><a href="http://weibo.com/chinahadoop" style="color:#FFF" rel="nofollow">ChinaHadoop</a></dd><br/>
+                <font color="white">微信公众号：ChinaHadoop</font><br/>
+                <font color="white">客服QQ：<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2895704140&amp;site=qq&amp;menu=yes" style="color:#FFF" rel="nofollow">2895704140</a></font></dd><br/>
+                <font color="white">手机：15611440609</font><br/>
+                <font color="white">邮箱：admin@chinahadoop.cn</font><br/>
+                <script type="text/javascript" src="http://tajs.qq.com/stats?sId=30534061" charset="UTF-8"></script>
+                <script>
+                    var _hmt = _hmt || [];
+                    (function() {
+                        var hm = document.createElement("script");
+                        hm.src = "//hm.baidu.com/hm.js?42496acfe194e26aac402105799876ef";
+                        var s = document.getElementsByTagName("script")[0];
+                        s.parentNode.insertBefore(hm, s);
+                    })();
+                </script>
+                <script>
+                    (function(){
+                        var bp = document.createElement('script');
+                        bp.src = '//push.zhanzhang.baidu.com/push.js';
+                        var s = document.getElementsByTagName("script")[0];
+                        s.parentNode.insertBefore(bp, s);
+                    })();
+                </script>
+                <a class="mlm" href="/archive/course">课程存档</a>
+                <div class="mts">
+                    课程内容版权均归
+                    <a href="/">
+                        北京小象科技有限公司
+                    </a>
+                    所有
+                    <a class="mlm" href="http://www.miibeian.gov.cn/" target="_blank">
+                        京ICP备14002699号
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<!-- 侧边栏快捷操作 -->
+<div class="es-bar hidden-xs">
+
+    <!-- 左侧列表 -->
+    <div class="es-bar-menu">
+        <ul class="bar-menu-top">
+            <li data-id="#bar-user-center" class="bar-user">
+                <a href="javascript:;" data-url="/esbar/my/study_center">学<br>习<br>中<br>心</a>
+            </li>
+            <li data-id="#bar-homework" data-toggle="tooltip" data-placement="left" title="我的考试/作业"><a href="javascript:;" data-url="/esbar/my/practice/reviewing"><i class="es-icon es-icon-edit"></i></a></li>    <li data-id="#bar-course-list" data-placement="left" data-toggle="tooltip" title="我的课程/班级">
+            <a data-url="/esbar/my/course" href="javascript:;">
+                <i class="es-icon es-icon-book">
+                </i>
+            </a>
+        </li>      <li data-id="#bar-message" data-toggle="tooltip" data-placement="left" title="通知">
+            <a href="javascript:;">
+                <i class="es-icon es-icon-notifications"></i>
+            </a>
+        </li>
+        </ul>
+        <ul class="bar-menu-sns">
+            <li class="popover-btn bar-weixin-btn" data-container=".bar-weixin-btn" data-content-element="#bar-weixin-content">
+                <a><i class="es-icon es-icon-weixin"></i></a>
+            </li>
+
+            <li>
+                <a href="http://www.chinahadoop.cn/page/62" target="_blank">常<br>见<br>问<br>题</a>
+            </li>
+            <li data-toggle="tooltip" data-placement="left" title="手机端">
+                <a href="/mobile/" target="_blank"><i class="es-icon es-icon-phone1"></i></a>
+            </li>
+            <li class="go-top" style="margin:-10px auto 0 auto;" data-toggle="tooltip" data-placement="left" title="回到顶端">
+                <a href="javascript:;">
+                    <i class="es-icon es-icon-keyboardarrowup" style="margin-bottom:-8px"></i>
+                    <span class="text-sm">TOP</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 列表内容 -->
+
+    <div class="bar-popover-content" style="display:none;">
+        <div id="bar-qq-content">
+
+
+            <div class="row">
+            </div>
+        </div>
+
+        <div id="bar-phone-content">
+        </div>
+
+        <div id="bar-weixin-content">
+            <img width="110" class="img-responsive" src="//scb1a9q0-sb.qiqiuyun.net/files/system/2017/03-01/130411b055cb326562.jpg?time=1488344657?time=1488355868?time=1488355914?7.5.15.1" alt="">
+        </div>
+    </div>
+
+    <script language="javascript" type="text/javascript">
+        NTKF_PARAM = {
+            siteid:"kf_9301",
+            settingid:"kf_9301_1464941748211",
+            uid:"",
+            uname:"",
+            isvip:"0",
+            userlevel:"1",
+            erpparam:"abc"
+        }
+    </script>
+    <script type="text/javascript" src="http://dl.ntalker.com/js/xn6/ntkfstat.js?siteid=kf_9301" charset="utf-8"></script>
+
+</div>
+
+
+
+
+
+<div id="login-modal" class="modal" data-url="/login/ajax"></div>
+<div id="modal" class="modal"></div>
+<div id="attachment-modal" class="modal"></div>
+
+<script>
+    var app = {};
+    app.debug = false;
+    app.version = '7.5.15.1';
+    app.httpHost = 'http://www.chinahadoop.cn';
+    app.basePath = '//scb1a9q0-sb.qiqiuyun.net';
+    app.theme = 'jianmo';
+    app.themeGlobalScript = 'theme/global-script';
+    app.jsPaths = {"common":"common","theme":"\/\/scb1a9q0-sb.qiqiuyun.net\/themes\/jianmo\/js","schoolgatebundle":"\/\/scb1a9q0-sb.qiqiuyun.net\/bundles\/schoolgate\/js","discountbundle":"\/\/scb1a9q0-sb.qiqiuyun.net\/bundles\/discount\/js","moneycardbundle":"\/\/scb1a9q0-sb.qiqiuyun.net\/bundles\/moneycard\/js","chargecoinbundle":"\/\/scb1a9q0-sb.qiqiuyun.net\/bundles\/chargecoin\/js","homeworkbundle":"\/\/scb1a9q0-sb.qiqiuyun.net\/bundles\/homework\/js","userimporterbundle":"\/\/scb1a9q0-sb.qiqiuyun.net\/bundles\/userimporter\/js","gracefulthemebundle":"\/\/scb1a9q0-sb.qiqiuyun.net\/bundles\/gracefultheme\/js","questionplusbundle":"\/\/scb1a9q0-sb.qiqiuyun.net\/bundles\/questionplus\/js","vipbundle":"\/\/scb1a9q0-sb.qiqiuyun.net\/bundles\/vip\/js","couponbundle":"\/\/scb1a9q0-sb.qiqiuyun.net\/bundles\/coupon\/js","customwebbundle":"\/\/scb1a9q0-sb.qiqiuyun.net\/bundles\/customweb\/js","customadminbundle":"\/\/scb1a9q0-sb.qiqiuyun.net\/bundles\/customadmin\/js","topxiawebbundle":"\/\/scb1a9q0-sb.qiqiuyun.net\/bundles\/topxiaweb\/js","topxiaadminbundle":"\/\/scb1a9q0-sb.qiqiuyun.net\/bundles\/topxiaadmin\/js","classroombundle":"\/\/scb1a9q0-sb.qiqiuyun.net\/bundles\/classroom\/js","materiallibbundle":"\/\/scb1a9q0-sb.qiqiuyun.net\/bundles\/materiallib\/js","sensitivewordbundle":"\/\/scb1a9q0-sb.qiqiuyun.net\/bundles\/sensitiveword\/js","permissionbundle":"\/\/scb1a9q0-sb.qiqiuyun.net\/bundles\/permission\/js","orgbundle":"\/\/scb1a9q0-sb.qiqiuyun.net\/bundles\/org\/js"};
+
+    app.crontab = '/common/crontab';
+
+    var CKEDITOR_BASEPATH = app.basePath + '/assets/libs/ckeditor/4.6.7/';
+    var CLOUD_FILE_SERVER = "";
+
+    app.config = {"api":{"weibo":{"key":"3735672790"},"qq":{"key":"101291257"},"douban":{"key":""},"renren":{"key":""}},"cloud":{"video_player":"http:\/\/cdn.staticfile.org\/GrindPlayerCN\/1.0.2\/GrindPlayer.swf","video_player_watermark_plugin":"http:\/\/cdn.staticfile.org\/GrindPlayerCN\/1.0.2\/Watermake-1.0.3.swf","video_player_fingerprint_plugin":"http:\/\/cdn.staticfile.org\/GrindPlayerCN\/1.0.2\/Fingerprint-1.0.1.swf"},"loading_img_path":"\/\/scb1a9q0-sb.qiqiuyun.net\/assets\/img\/default\/loading.gif?7.5.15.1"};
+
+    app.arguments = {};
+    app.controller = 'index';
+
+    app.scripts = ["default\/header.js","es-bar\/index","notification\/notification"];
+
+    app.uploadUrl = '/file/upload';
+    app.imgCropUrl = '/file/img/crop';
+    app.lessonCopyEnabled = '1';
+    app.cloudSdkCdn = '';
+    app.mainScript = '//scb1a9q0-sb.qiqiuyun.net/bundles/topxiaweb/js/app.js?7.5.15.1';
+    app.lang = 'zh_CN';
+</script>
+<script src="//scb1a9q0-sb.qiqiuyun.net/bundles/bazingajstranslation/js/translator.min.js?7.5.15.1"></script>
+<script src="http://www.chinahadoop.cn/translations/js"></script>
+<script src="//scb1a9q0-sb.qiqiuyun.net/assets/libs/seajs/seajs/2.2.1/sea.js?7.5.15.1"></script>
+<script src="//scb1a9q0-sb.qiqiuyun.net/assets/libs/seajs/seajs-style/1.0.2/seajs-style.js?7.5.15.1"></script>
+<script src="//scb1a9q0-sb.qiqiuyun.net/assets/libs/seajs/seajs-text/1.1.1/seajs-text.min.js?7.5.15.1"></script>
+<script src="//scb1a9q0-sb.qiqiuyun.net/assets/libs/seajs-global-config.js?7.5.15.1"></script>
+<script>
+    seajs.use(app.mainScript);
+</script>
+</body>
+</html>
