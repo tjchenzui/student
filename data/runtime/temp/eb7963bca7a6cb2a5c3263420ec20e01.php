@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:64:"themes/admin_simpleboot3/kecheng\admin_classification\index.html";i:1505784434;s:43:"themes/admin_simpleboot3/public\header.html";i:1506308038;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:64:"themes/admin_simpleboot3/kecheng\admin_classification\index.html";i:1505784434;s:43:"themes/admin_simpleboot3/public\header.html";i:1504866290;}*/ ?>
 <!doctype html>
 <html>
 <head>

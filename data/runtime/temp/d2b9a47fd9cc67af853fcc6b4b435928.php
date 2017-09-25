@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:42:"themes/admin_simpleboot3/admin\\login.html";i:1506308037;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:42:"themes/admin_simpleboot3/admin\\login.html";i:1505462444;}*/ ?>
 <html>
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>

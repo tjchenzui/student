@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:6:{s:37:"themes/simpleboot3/portal\\index.html";i:1506308039;s:35:"themes/simpleboot3/public\head.html";i:1506308040;s:39:"themes/simpleboot3/public\function.html";i:1506308040;s:34:"themes/simpleboot3/public\nav.html";i:1506308040;s:37:"themes/simpleboot3/public\footer.html";i:1506308040;s:38:"themes/simpleboot3/public\scripts.html";i:1506308040;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:6:{s:37:"themes/simpleboot3/portal\\index.html";i:1504866290;s:35:"themes/simpleboot3/public\head.html";i:1504866290;s:39:"themes/simpleboot3/public\function.html";i:1504866290;s:34:"themes/simpleboot3/public\nav.html";i:1504940378;s:37:"themes/simpleboot3/public\footer.html";i:1504866290;s:38:"themes/simpleboot3/public\scripts.html";i:1504866290;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -112,7 +112,7 @@ function _sp_helloworld3(){
 
     </style>
     <?php 
-    \think\Hook::listen('before_head_end',$temp59c8c4918d2d8,null,false);
+    \think\Hook::listen('before_head_end',$temp59c8c7fa1111e,null,false);
  ?>
 </head>
 <body class="body-white">
@@ -133,8 +133,8 @@ function _sp_helloworld3(){
             <ul id="main-menu" class="nav navbar-nav">
                 <?php
 
-function __parse_navigationb5e0ff9369f65ef37216aff6cb8d8569($menus,$level=1){
-$_parse_navigation_func_name = '__parse_navigationb5e0ff9369f65ef37216aff6cb8d8569';
+function __parse_navigation259e28f8e1ffc750aa0fbdfb3321d61b($menus,$level=1){
+$_parse_navigation_func_name = '__parse_navigation259e28f8e1ffc750aa0fbdfb3321d61b';
 if(is_array($menus) || $menus instanceof \think\Collection || $menus instanceof \think\Paginator): if( count($menus)==0 ) : echo "" ;else: foreach($menus as $key=>$menu): if(empty($menu['children'])): ?>
     <li class="menu-item menu-item-level-<?php echo $level; ?>">
     
@@ -163,9 +163,9 @@ if(is_array($menus) || $menus instanceof \think\Collection || $menus instanceof 
     $navMenuModel = new \app\admin\model\NavMenuModel();
     $menus = $navMenuModel->navMenusTreeArray('',0);
 if(''==''): ?>
-    <?php echo __parse_navigationb5e0ff9369f65ef37216aff6cb8d8569($menus); else: ?>
+    <?php echo __parse_navigation259e28f8e1ffc750aa0fbdfb3321d61b($menus); else: ?>
     < id="main-navigation" class="nav navbar-nav navbar-nav-custom">
-        <?php echo __parse_navigationb5e0ff9369f65ef37216aff6cb8d8569($menus); ?>
+        <?php echo __parse_navigation259e28f8e1ffc750aa0fbdfb3321d61b($menus); ?>
     </>
 <?php endif; ?>
 
@@ -271,7 +271,7 @@ if(count($__SLIDE_ITEMS__) == 0): ?>
         <?php 
             $features_count = count($widget['vars']['features']);
             $rows = ceil($features_count/3);
-         $__FOR_START_19660__=1;$__FOR_END_19660__=$rows;for($row=$__FOR_START_19660__;$row <= $__FOR_END_19660__;$row+=1){ 
+         $__FOR_START_12483__=1;$__FOR_END_12483__=$rows;for($row=$__FOR_START_12483__;$row <= $__FOR_END_12483__;$row+=1){ 
                 $first_row = ($row-1)*3;
                 $features = array_slice($widget['vars']['features'],$first_row,3);
              ?>
@@ -299,8 +299,7 @@ if(count($__SLIDE_ITEMS__) == 0): ?>
             <?php 
                 $widget["vars"]["last_news_category_id"] = empty($widget["vars"]["last_news_category_id"])?1:$widget["vars"]["last_news_category_id"];
                 $last_news_limit=4;
-             
-$articles_data = \app\portal\service\ApiService::articles([
+             $articles_data = \app\portal\service\ApiService::articles([
     'field'   => '',
     'where'   => "",
     'limit'   => $last_news_limit,
@@ -360,7 +359,7 @@ $__PAGE_VAR_NAME__ = isset($articles_data['page'])?$articles_data['page']:'';
 <hr>
 <div id="footer">
     <?php 
-    \think\Hook::listen('footer_start',$temp59c8c4918d329,null,false);
+    \think\Hook::listen('footer_start',$temp59c8c7fa1116f,null,false);
  ?>
     <div class="links">
         <?php
@@ -499,7 +498,7 @@ var GV = {
     });
 </script>
 <?php 
-    \think\Hook::listen('before_body_end',$temp59c8c4918d356,null,false);
+    \think\Hook::listen('before_body_end',$temp59c8c7fa1119b,null,false);
  ?>
 </body>
 </html>

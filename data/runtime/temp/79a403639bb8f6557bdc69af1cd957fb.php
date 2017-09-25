@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:62:"themes/admin_simpleboot3/kecheng\admin_classification\add.html";i:1506329524;s:43:"themes/admin_simpleboot3/public\header.html";i:1506308038;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:62:"themes/admin_simpleboot3/kecheng\admin_classification\add.html";i:1506329465;s:43:"themes/admin_simpleboot3/public\header.html";i:1504866290;}*/ ?>
 <!doctype html>
 <html>
 <head>
@@ -101,8 +101,7 @@
             </div>
         </div>
     </form>
--->
-    <!--<form method="post" class="form-horizontal js-ajax-form margin-top-20" action="<?php echo url('admin_classification/addPost'); ?>">
+--><form method="post" class="form-horizontal js-ajax-form margin-top-20" action="<?php echo url('admin_classification/addPost'); ?>">
     <div class="form-group">
         <label for="input-name" class="col-sm-2 control-label">名称<span class="form-required">*</span></label>
         <div class="col-md-6 col-sm-10">
@@ -122,26 +121,6 @@
         </div>
     </div>
 </form>
-    --><form method="post" class="form-horizontal js-ajax-form margin-top-20" action="<?php echo url('admin_classification/addPost'); ?>">
-        <div class="form-group">
-            <label for="input-name" class="col-sm-2 control-label">名称<span class="form-required">*</span></label>
-            <div class="col-md-6 col-sm-10">
-                <input type="text" class="form-control" id="input-name" name="name">
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="input-remark" class="col-sm-2 control-label"><?php echo lang('DESCRIPTION'); ?></label>
-            <div class="col-md-6 col-sm-10">
-                <textarea class="form-control" id="input-remark" name="desc"></textarea>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-primary js-ajax-submit"><?php echo lang('ADD'); ?></button>
-                <a class="btn btn-default" href="<?php echo url('admin_classification/index'); ?>"><?php echo lang('BACK'); ?></a>
-            </div>
-        </div>
-    </form>
 </div>
 <script src="__STATIC__/js/admin.js"></script>
 </body>
