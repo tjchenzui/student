@@ -11,7 +11,6 @@ use cmf\controller\AdminBaseController;
 use app\kecheng\model\AdminClassificationModel;
 
 class AdminClassificationController extends AdminBaseController{
-
     /**
      * 课程分类
      * @adminMenu(
@@ -28,21 +27,24 @@ class AdminClassificationController extends AdminBaseController{
     function index(){
         $AdminClassificationModel = new AdminClassificationModel();
 
-        if($query = $this->request->param('query')){
+        if($query = $this->request->param('name')){
+            //return 'CHENZUI123';
+            //为了实现分页携带请求参数 $config = ['query'=>['name'=>$query]] 加上这个参数
             $kecheng = $AdminClassificationModel->where('name','like',"%$query%")
-                ->select();
-
+                ->paginate(8,$simple = false, $config = ['query'=>['name'=>$query]]);
             $this->assign('kecheng', $kecheng);
-            return $this->fetch();
+            $this->assign('page', $kecheng->render());//单独提取分页出来
+            return $this->fetch($template = 'admin_classification/index', $vars = ['name'=>$query]);
 
         }
 
         //展示课程的页面
-        $kecheng         = $AdminClassificationModel->select();
+        //$kecheng         = $AdminClassificationModel->select();
+        $kecheng         = $AdminClassificationModel->paginate(8);
         $this->assign('kecheng', $kecheng);
+        $this->assign('page', $kecheng->render());//单独提取分页出来
         return $this->fetch();
     }
-
     /**
      * 添加课程
      * @adminMenu(

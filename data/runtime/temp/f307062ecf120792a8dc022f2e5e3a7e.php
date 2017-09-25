@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:6:{s:37:"themes/simpleboot3/portal\\index.html";i:1506308039;s:35:"themes/simpleboot3/public\head.html";i:1506308040;s:39:"themes/simpleboot3/public\function.html";i:1506308040;s:34:"themes/simpleboot3/public\nav.html";i:1506308040;s:37:"themes/simpleboot3/public\footer.html";i:1506308040;s:38:"themes/simpleboot3/public\scripts.html";i:1506308040;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:38:"themes/simpleboot3/kecheng\\index.html";i:1506308039;s:35:"themes/simpleboot3/public\head.html";i:1506308040;s:39:"themes/simpleboot3/public\function.html";i:1506308040;s:34:"themes/simpleboot3/public\nav.html";i:1506308040;s:38:"themes/simpleboot3/public\scripts.html";i:1506308040;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -68,6 +68,8 @@ function _sp_helloworld3(){
 </style>
 	
     <link href="__TMPL__/public/assets/css/slippry/slippry.css" rel="stylesheet">
+    <link href="__TMPL__/public/assets/css/kecheng/chen.css" rel="stylesheet">
+
     <style>
         .caption-wraper {
             position: absolute;
@@ -112,7 +114,7 @@ function _sp_helloworld3(){
 
     </style>
     <?php 
-    \think\Hook::listen('before_head_end',$temp59c8bb5e30a0e,null,false);
+    \think\Hook::listen('before_head_end',$temp59c8740ca0556,null,false);
  ?>
 </head>
 <body class="body-white">
@@ -133,8 +135,8 @@ function _sp_helloworld3(){
             <ul id="main-menu" class="nav navbar-nav">
                 <?php
 
-function __parse_navigationa40c93f258c52465afa6e292081a028a($menus,$level=1){
-$_parse_navigation_func_name = '__parse_navigationa40c93f258c52465afa6e292081a028a';
+function __parse_navigationb5fe0ff8ac7ef799fe20c21d0821ba27($menus,$level=1){
+$_parse_navigation_func_name = '__parse_navigationb5fe0ff8ac7ef799fe20c21d0821ba27';
 if(is_array($menus) || $menus instanceof \think\Collection || $menus instanceof \think\Paginator): if( count($menus)==0 ) : echo "" ;else: foreach($menus as $key=>$menu): if(empty($menu['children'])): ?>
     <li class="menu-item menu-item-level-<?php echo $level; ?>">
     
@@ -163,9 +165,9 @@ if(is_array($menus) || $menus instanceof \think\Collection || $menus instanceof 
     $navMenuModel = new \app\admin\model\NavMenuModel();
     $menus = $navMenuModel->navMenusTreeArray('',0);
 if(''==''): ?>
-    <?php echo __parse_navigationa40c93f258c52465afa6e292081a028a($menus); else: ?>
+    <?php echo __parse_navigationb5fe0ff8ac7ef799fe20c21d0821ba27($menus); else: ?>
     < id="main-navigation" class="nav navbar-nav navbar-nav-custom">
-        <?php echo __parse_navigationa40c93f258c52465afa6e292081a028a($menus); ?>
+        <?php echo __parse_navigationb5fe0ff8ac7ef799fe20c21d0821ba27($menus); ?>
     </>
 <?php endif; ?>
 
@@ -214,189 +216,127 @@ if(''==''): ?>
         </div>
     </div>
 </nav>
-
-<ul id="home-slider" class="list-unstyled">
-    <?php 
-        $top_slide_id=empty($theme_vars['top_slide'])?1:$theme_vars['top_slide'];
-     
-     $__SLIDE_ITEMS__ = \app\admin\service\ApiService::slides($top_slide_id);
-if(is_array($__SLIDE_ITEMS__) || $__SLIDE_ITEMS__ instanceof \think\Collection || $__SLIDE_ITEMS__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__SLIDE_ITEMS__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-
-        <li>
-            <div class="caption-wraper">
-                <div class="caption"><?php echo (isset($vo['title']) && ($vo['title'] !== '')?$vo['title']:''); ?></div>
-            </div>
-            <a href="<?php echo (isset($vo['url']) && ($vo['url'] !== '')?$vo['url']:''); ?>"><img src="<?php echo cmf_get_image_url($vo['image']); ?>" alt=""></a>
-        </li>
-    
-<?php endforeach; endif; else: echo "" ;endif; 
-    if(!isset($__SLIDE_ITEMS__)){
-        $__SLIDE_ITEMS__ = \app\admin\service\ApiService::slides($top_slide_id);
-    }
-if(count($__SLIDE_ITEMS__) == 0): ?>
-
-        <li>
-            <div class="caption-wraper">
-                <div class="caption">此幻灯片只是演示,您没有设置任何幻灯片,请到后台模板设置！</div>
-            </div>
-            <a href=""><img src="__TMPL__/public/assets/images/demo/1.jpg" alt=""></a>
-        </li>
-        <li>
-            <div class="caption-wraper">
-                <div class="caption">此幻灯片只是演示,您没有设置任何幻灯片,请到后台模板设置！</div>
-            </div>
-            <a href=""><img src="__TMPL__/public/assets/images/demo/2.jpg" alt=""></a>
-        </li>
-        <li>
-            <div class="caption-wraper">
-                <div class="caption">此幻灯片只是演示,您没有设置任何幻灯片,请到后台模板设置！</div>
-            </div>
-            <a href=""><img src="__TMPL__/public/assets/images/demo/3.jpg" alt=""></a>
-        </li>
-    
-<?php endif; ?>
-</ul>
-
-<div class="container">
-    <?php
-     if(isset($theme_widgets['features']) && $theme_widgets['features']['display']){
-        $widget=$theme_widgets['features'];
-     
- ?>
-
-        <div>
-            <h1 class="text-center"><?php echo $widget['title']; ?></h1>
-            <h3 class="text-center"><?php echo $widget['vars']['sub_title']; ?></h3>
+<!--jiade kaishi-->
+<section class="class-section ">
+    <div class="container">
+        <div class="text-line">
+            <h2 style="text-align: center">
+                <span>推荐课程</span>
+                <div class="line"></div>
+            </h2>
+            <div class="subtitle">班级化学习体系，给你更多的课程相关服务。</div>
         </div>
-        <?php 
-            $features_count = count($widget['vars']['features']);
-            $rows = ceil($features_count/3);
-         $__FOR_START_22699__=1;$__FOR_END_22699__=$rows;for($row=$__FOR_START_22699__;$row <= $__FOR_END_22699__;$row+=1){ 
-                $first_row = ($row-1)*3;
-                $features = array_slice($widget['vars']['features'],$first_row,3);
-             ?>
-            <div class="row">
-                <?php if(is_array($features) || $features instanceof \think\Collection || $features instanceof \think\Paginator): if( count($features)==0 ) : echo "" ;else: foreach($features as $key=>$vo): ?>
-                    <div class="col-md-4">
-                        <h2 class="font-large nospace"><i class="fa fa-<?php echo $vo['icon']; ?>"></i> <?php echo $vo['title']; ?></h2>
-                        <p><?php echo $vo['content']; ?></p>
-                    </div>
-                <?php endforeach; endif; else: echo "" ;endif; ?>
-            </div>
-        <?php } 
-    }
- 
-     if(isset($theme_widgets['last_news']) && $theme_widgets['last_news']['display']){
-        $widget=$theme_widgets['last_news'];
-     
- ?>
+        <div class="recommend-class-list row">
+            <div class="col-md-3 col-xs-6">
+                <div class="class-item">
+                    <div class="class-img-wrap">
+                        <a class="class-img" href="/classroom/58">
+                            <img src="__TMPL__/public/assets/images/kecheng/001.jpg" alt="《深度学习》第五期" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/course/2017/08-28/10144661b8b6898371.png" />
+                        </a>
+                        <div class="mask">
 
-        <div>
-            <h1 class="text-center"><?php echo $widget['title']; ?></h1>
-        </div>
-
-        <div class="row">
-            <?php 
-                $widget["vars"]["last_news_category_id"] = empty($widget["vars"]["last_news_category_id"])?1:$widget["vars"]["last_news_category_id"];
-                $last_news_limit=4;
-             
-$articles_data = \app\portal\service\ApiService::articles([
-    'field'   => '',
-    'where'   => "",
-    'limit'   => $last_news_limit,
-    'order'   => 'post.published_time DESC',
-    'page'    => '',
-    'relation'=> '',
-    'category_ids'=>$widget['vars']['last_news_category_id']
-]);
-
-$__PAGE_VAR_NAME__ = isset($articles_data['page'])?$articles_data['page']:'';
-
- if(is_array($articles_data['articles']) || $articles_data['articles'] instanceof \think\Collection || $articles_data['articles'] instanceof \think\Paginator): $i = 0; $__LIST__ = $articles_data['articles'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-
-                <div class="col-md-3">
-                    <div class="tc-gridbox">
-                        <div class="header">
-                            <div class="item-image">
-                                <a href="<?php echo cmf_url('portal/Article/index',array('id'=>$vo['id'],'cid'=>$vo['category_id'])); ?>">
-                                    <?php if(isset($vo['more']['thumbnail'])): if(empty($vo['more']['thumbnail']) || (($vo['more']['thumbnail'] instanceof \think\Collection || $vo['more']['thumbnail'] instanceof \think\Paginator ) && $vo['more']['thumbnail']->isEmpty())): ?>
-                                            <img src="__TMPL__/public/assets/images/default-thumbnail.png"
-                                                 class="img-responsive"
-                                                 alt="">
-                                            <?php else: ?>
-                                            <img src="<?php echo cmf_get_image_url($vo['more']['thumbnail']); ?>"
-                                                 class="img-responsive"
-                                                 alt="">
-                                        <?php endif; else: ?>
-                                        <img src="__TMPL__/public/assets/images/default-thumbnail.png"
-                                             class="img-responsive"
-                                             alt="">
-                                    <?php endif; ?>
-                                </a>
-                            </div>
-                            <h3>
-                                <a href="<?php echo cmf_url('portal/Article/index',array('id'=>$vo['id'],'cid'=>$vo['category_id'])); ?>"><?php echo $vo['post_title']; ?></a>
-                            </h3>
-                            <hr>
-                        </div>
-                        <div class="body">
-                            <p>
-                                <a href="<?php echo cmf_url('portal/Article/index',array('id'=>$vo['id'],'cid'=>$vo['category_id'])); ?>">...</a>
-                            </p>
+                            <a href="/classroom/58" class="btn btn-warning">立即加入</a>
                         </div>
                     </div>
+                    <h3><a class="link-dark" href="/classroom/58">《深度学习》第五期</a></h3>
+                    <div class="metas">共有3门课程</div>
+                </div>          </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="class-item">
+                    <div class="class-img-wrap">
+                        <a class="class-img" href="/classroom/57">
+                            <img src="__TMPL__/public/assets/images/kecheng/001.jpg" alt="《BAT面试算法特训班》" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/course/2017/08-14/131454e3cc73024860.jpg" />
+                        </a>
+                        <div class="mask">
+
+                            <a href="/classroom/57" class="btn btn-warning">立即加入</a>
+                        </div>
+                    </div>
+                    <h3><a class="link-dark" href="/classroom/57">《BAT面试算法特训班》</a></h3>
+                    <div class="metas">共有3门课程</div>
+                </div>          </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="class-item">
+                    <div class="class-img-wrap">
+                        <a class="class-img" href="/classroom/56">
+                            <img src="__TMPL__/public/assets/images/kecheng/001.jpg" alt="《CTA投资与程序化交易》第一期" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/course/2017/07-31/182324c3f8b1412065.png" />
+                        </a>
+                        <div class="mask">
+
+                            <a href="/classroom/56" class="btn btn-warning">立即加入</a>
+                        </div>
+                    </div>
+                    <h3><a class="link-dark" href="/classroom/56">《CTA投资与程序化交易》第一期</a></h3>
+                    <div class="metas">共有3门课程</div>
+                </div>          </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="class-item">
+                    <div class="class-img-wrap">
+                        <a class="class-img" href="/classroom/55">
+                            <img src="__TMPL__/public/assets/images/kecheng/001.jpg" alt="《机器学习》升级版VI" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/course/2017/07-18/1808226c52f1301450.png" />
+                        </a>
+                        <div class="mask">
+
+                            <a href="/classroom/55" class="btn btn-warning">立即加入</a>
+                        </div>
+                    </div>
+                    <h3><a class="link-dark" href="/classroom/55">《机器学习》升级版VI</a></h3>
+                    <div class="metas">共有3门课程</div>
+                </div>          </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="class-item">
+                    <div class="class-img-wrap">
+                        <a class="class-img" href="/classroom/17">
+                            <img src="__TMPL__/public/assets/images/kecheng/001.jpg" alt="《数据科学的数学、概率和统计》" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/default/2016/05-15/2253073d73ce463384.jpg" />
+                        </a>
+                        <div class="mask">
+
+                            <a href="/classroom/17" class="btn btn-warning">立即加入</a>
+                        </div>
+                    </div>
+                    <h3><a class="link-dark" href="/classroom/17">《数据科学的数学、概率和统计》</a></h3>
+                    <div class="metas">共有3门课程</div>
+                </div>          </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="class-item">
+                    <div class="class-img-wrap">
+                        <a class="class-img" href="/classroom/18">
+                            <img src="__TMPL__/public/assets/images/kecheng/001.jpg" alt="《数据分析和数据挖掘》第一期" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/default/2016/05-29/1632502b61fc662144.jpg" />
+                        </a>
+                        <div class="mask">
+
+                            <a href="/classroom/18" class="btn btn-warning">立即加入</a>
+                        </div>
+                    </div>
+                    <h3><a class="link-dark" href="/classroom/18">《数据分析和数据挖掘》第一期</a></h3>
+                    <div class="metas">共有2门课程</div>
+                </div>          </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="class-item">
+                    <div class="class-img-wrap">
+                        <a class="class-img" href="/classroom/24">
+                            <img src="__TMPL__/public/assets/images/kecheng/001.jpg" alt="《大数据平台之Linux、Java、Scala》" class="img-responsive" data-echo="http://scb1a9q0-sb.qiqiuyun.net/files/course/2016/08-24/121544033c08892051.jpg" />
+                        </a>
+                        <div class="mask">
+
+                            <a href="/classroom/24" class="btn btn-warning">立即加入</a>
+                        </div>
+                    </div>
+                    <h3><a class="link-dark" href="/classroom/24">《大数据平台之Linux、Java、Scala》</a></h3>
+                    <div class="metas">共有3门课程</div>
                 </div>
-            
-<?php endforeach; endif; else: echo "" ;endif; ?>
+            </div>
+            <div class="clear"></div>
         </div>
-    
-<?php
-    }
- ?>
-
-
-    <br>
-<!-- Footer ================================================== -->
-<hr>
-<div id="footer">
-    <?php 
-    \think\Hook::listen('footer_start',$temp59c8bb5e30a40,null,false);
- ?>
-    <div class="links">
-        <?php
-     $__LINKS__ = \app\admin\service\ApiService::links();
-if(is_array($__LINKS__) || $__LINKS__ instanceof \think\Collection || $__LINKS__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__LINKS__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-
-            <a href="<?php echo (isset($vo['url']) && ($vo['url'] !== '')?$vo['url']:''); ?>" target="<?php echo (isset($vo['target']) && ($vo['target'] !== '')?$vo['target']:''); ?>"><?php echo (isset($vo['name']) && ($vo['name'] !== '')?$vo['name']:''); ?></a>&nbsp;
-        
-<?php endforeach; endif; else: echo "" ;endif; ?>
-
+        <div class="section-more-btn" style="text-align: center">
+            <a href="#">
+                更多课程
+            </a>
+        </div>
     </div>
-    <p>
-        Made by <a href="http://www.thinkcmf.com" target="_blank">ThinkCMF</a>
-        Code licensed under the
-        <a href="http://www.apache.org/licenses/LICENSE-2.0" rel="nofollow" target="_blank">Apache License v2.0</a>.
-        <br/>
-        Based on
-        <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>.
-        Icons from
-        <a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">Font Awesome</a>
-        <br>
-        备案号:
-        <?php if(!(empty($site_info['site_icp']) || (($site_info['site_icp'] instanceof \think\Collection || $site_info['site_icp'] instanceof \think\Paginator ) && $site_info['site_icp']->isEmpty()))): ?>
-            <a href="http://www.miitbeian.gov.cn/" target="_blank"><?php echo $site_info['site_icp']; ?></a>
-            <?php else: ?>
-            请在后台设置"网站信息"设置"备案信息"
-        <?php endif; ?>
+</section>
 
 
-    </p>
-</div>
-<div id="backtotop">
-    <i class="fa fa-arrow-circle-up"></i>
-</div>
-
-</div>
 <!-- /container -->
 <script type="text/javascript">
 //全局变量
@@ -499,7 +439,7 @@ var GV = {
     });
 </script>
 <?php 
-    \think\Hook::listen('before_body_end',$temp59c8bb5e30a59,null,false);
+    \think\Hook::listen('before_body_end',$temp59c8740ca05b5,null,false);
  ?>
 </body>
 </html>

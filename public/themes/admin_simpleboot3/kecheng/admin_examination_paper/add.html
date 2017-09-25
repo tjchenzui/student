@@ -1,5 +1,48 @@
 <include file="public@header"/>
 </head>
+<style type="text/css">
+    <!-- 全局样式表 -->
+    body,ul,li,a,img,p,input{ margin:0; padding:0; }
+    ul,ol,li{ list-style:none; }
+    a:link , a:visited{color:#444;text-decoration:none;}
+    a:hover{color:red;}
+    body{ font-size:12px; font-family:宋体; color:black; }
+    img{border:0;}
+    /*居中设置*/
+    body{
+        text-align: center;
+    }
+
+    .main{
+        width: auto;
+        border: 1px solid black;
+    }
+    .main .content{
+        border: solid 1px black;
+    }
+
+
+
+
+    table{
+        text-align: right;
+        margin: auto;
+    }
+
+    textarea{
+        resize:none;
+        width: 400px;
+        height: 50px;
+        max-width: 400px;
+        max-height: 50px;
+    }
+
+</style>
+<script type="text/javascript">
+    function newdaan() {
+        alert("添加新的答案吗?");
+    }
+</script>
 <body>
 <div class="wrap">
     <ul class="nav nav-tabs">
@@ -26,6 +69,48 @@
             </div>
         </div>
     </form>
+    <!--添加的部分-->
+    <div class="main" id="main">
+        <form class="tianjia" id="tianjia" method="post">
+            <div class="content" >
+                <h3>试题添加页面</h3>
+                <!--以下是第一道题的添加部分-->
+                <div class="shiti">
+                    <div>
+                        <table>
+                            <tr>
+                                <td>题目添加</td>
+                                <td><textarea placeholder="请输入答案..."></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>选项添加</td>
+                                <td><textarea placeholder="请输入答案..."></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>选项添加</td>
+                                <td><textarea placeholder="请输入答案..."></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>选项添加</td>
+                                <td><textarea placeholder="请输入答案..."></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>选项添加</td>
+                                <td><textarea placeholder="请输入题目..."></textarea></td>
+                            </tr>
+                        </table>
+                        <input type="button" value="添加更多的答案" onclick="newdaan()" />
+                        <hr/>
+                    </div>
+                </div>
+
+            </div>
+            <div class="content">
+
+            </div>
+            <input type="button" value="添加下一道题" onclick="newxinti()" />
+        </form>
+    </div>
 </div>
 <script src="__STATIC__/js/admin.js"></script>
 </body>
