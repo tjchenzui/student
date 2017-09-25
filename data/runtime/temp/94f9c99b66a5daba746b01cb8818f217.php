@@ -78,7 +78,7 @@
             }
         </style>
     <?php endif; 
-    \think\Hook::listen('admin_before_head_end',$temp59c8bdb66980f,null,false);
+    \think\Hook::listen('admin_before_head_end',$temp59c8c42e253c4,null,false);
  ?>
 </head>
 <style type="text/css">
@@ -319,7 +319,7 @@ document.getElementById("time").innerHTML=formatTime;//document.getElementById("
     </div>
 </div>
 <?php 
-    \think\Hook::listen('admin_before_body_end',$temp59c8bdb669872,null,false);
+    \think\Hook::listen('admin_before_body_end',$temp59c8c42e25423,null,false);
  ?>
 </body>
 </html>

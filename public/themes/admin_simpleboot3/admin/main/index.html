@@ -24,66 +24,66 @@
     }
 </style>
 
-<script language="javascript">
-function showTime(){
-var date=new Date(); //获取时间集
-<!--获取年月日时分秒 -->
-var year =date.getYear();
-var month=date.getMonth()+1;
-var day=date.getDate();
-var hours = date.getHours();
-var minutes = date.getMinutes();
-var seconds = date.getSeconds();
-<!--获取一周中系统日期的编号，星期天开始编号，编号从0开始；即星期天的编号为0...-->
-var myWeekDay = date.getDay();
-var weekDay = "";
-<!--根据日期在一周中的编号确定weekDay的值 ;-->
-if(myWeekDay==0) weekDay = "星期日";
-if(myWeekDay==1) weekDay = "星期一";
-if(myWeekDay==2) weekDay = "星期二";
-if(myWeekDay==3) weekDay = "星期三";
-if(myWeekDay==4) weekDay = "星期四";
-if(myWeekDay==5) weekDay = "星期五";
-if(myWeekDay==6) weekDay = "星期六";
-<!--定义变量根据需求按自己喜欢的格式保存日期-->
-var word = "";
-if(hours < 6){word="AM 凌晨好!";}
-else if (hours < 9){word="AM 早上好!";}
-else if (hours < 12){word="AM 上午好!";}
-else if (hours < 14){word="NOON 中午好!";}
-else if (hours < 17){word="PM 下午好!";}
-else if (hours < 19){word="PM 傍晚好!";}
-else if (hours < 22){word="PM 晚上好!";}
-else {word="DEEP NIGHT 深夜好!";}
+<!--<script language="javascript">-->
+<!--function showTime(){-->
+<!--var date=new Date(); //获取时间集-->
+<!--&lt;!&ndash;获取年月日时分秒 &ndash;&gt;-->
+<!--var year =date.getYear();-->
+<!--var month=date.getMonth()+1;-->
+<!--var day=date.getDate();-->
+<!--var hours = date.getHours();-->
+<!--var minutes = date.getMinutes();-->
+<!--var seconds = date.getSeconds();-->
+<!--&lt;!&ndash;获取一周中系统日期的编号，星期天开始编号，编号从0开始；即星期天的编号为0...&ndash;&gt;-->
+<!--var myWeekDay = date.getDay();-->
+<!--var weekDay = "";-->
+<!--&lt;!&ndash;根据日期在一周中的编号确定weekDay的值 ;&ndash;&gt;-->
+<!--if(myWeekDay==0) weekDay = "星期日";-->
+<!--if(myWeekDay==1) weekDay = "星期一";-->
+<!--if(myWeekDay==2) weekDay = "星期二";-->
+<!--if(myWeekDay==3) weekDay = "星期三";-->
+<!--if(myWeekDay==4) weekDay = "星期四";-->
+<!--if(myWeekDay==5) weekDay = "星期五";-->
+<!--if(myWeekDay==6) weekDay = "星期六";-->
+<!--&lt;!&ndash;定义变量根据需求按自己喜欢的格式保存日期&ndash;&gt;-->
+<!--var word = "";-->
+<!--if(hours < 6){word="AM 凌晨好!";}-->
+<!--else if (hours < 9){word="AM 早上好!";}-->
+<!--else if (hours < 12){word="AM 上午好!";}-->
+<!--else if (hours < 14){word="NOON 中午好!";}-->
+<!--else if (hours < 17){word="PM 下午好!";}-->
+<!--else if (hours < 19){word="PM 傍晚好!";}-->
+<!--else if (hours < 22){word="PM 晚上好!";}-->
+<!--else {word="DEEP NIGHT 深夜好!";}-->
 
-if(month.toString().length == 1){
-month='0'+month;
-}
-if(day.toString().length == 1){
-day='0'+day;
-}
-if(hours.toString().length == 1){
-hours='0'+hours;
-}
-if(minutes.toString().length == 1){
-minutes='0'+minutes;
-}
-if(seconds.toString().length == 1){
-seconds='0'+seconds;
-}
-<!--按自己喜欢的格式保存日期-->
-var formatTime=/*year+"年"+*/month+"月"+day+"日 "+hours+":"+minutes+":"+seconds+" "+weekDay+" "+word;
-window.setInterval("showTime()",1000);
-document.getElementById("time").innerHTML=formatTime;//document.getElementById("time").innerText=formatTime;
-}
-</script>
+<!--if(month.toString().length == 1){-->
+<!--month='0'+month;-->
+<!--}-->
+<!--if(day.toString().length == 1){-->
+<!--day='0'+day;-->
+<!--}-->
+<!--if(hours.toString().length == 1){-->
+<!--hours='0'+hours;-->
+<!--}-->
+<!--if(minutes.toString().length == 1){-->
+<!--minutes='0'+minutes;-->
+<!--}-->
+<!--if(seconds.toString().length == 1){-->
+<!--seconds='0'+seconds;-->
+<!--}-->
+<!--&lt;!&ndash;按自己喜欢的格式保存日期&ndash;&gt;-->
+<!--var formatTime=/*year+"年"+*/month+"月"+day+"日 "+hours+":"+minutes+":"+seconds+" "+weekDay+" "+word;-->
+<!--window.setInterval("showTime()",1000);-->
+<!--document.getElementById("time").innerHTML=formatTime;//document.getElementById("time").innerText=formatTime;-->
+<!--}-->
+<!--</script>-->
 <body onload = "showTime()">
 <div class="view-product background-color">
     <div class="padding-big2">
             欢迎进入学生在线测试
-        <div id ="time" align="center" style="color:#3366FF">
+        <!--<div id ="time" align="center" style="color:#3366FF">
             <span></span>
-        </div>
+        </div>-->
     </div>
     <div class="padding-big background-color">
         <div class="account-info clearfix">

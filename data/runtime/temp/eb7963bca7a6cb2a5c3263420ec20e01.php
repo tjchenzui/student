@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:64:"themes/admin_simpleboot3/kecheng\admin_classification\index.html";i:1506308037;s:43:"themes/admin_simpleboot3/public\header.html";i:1506308038;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:64:"themes/admin_simpleboot3/kecheng\admin_classification\index.html";i:1505784434;s:43:"themes/admin_simpleboot3/public\header.html";i:1506308038;}*/ ?>
 <!doctype html>
 <html>
 <head>
@@ -87,28 +87,54 @@
         text-align: center;
     }
 </style>
+<script type="text/javascript">
+    function chaxun(){
+
+       /* $.get("<?php echo url('admin_classification/index'); ?>",{name:'tom'},function(msg){
+            alert(msg);
+            //console(msg);
+
+        });*/
+        //获取表单的数据
+        /*var nm = document.getElementById('kecheng').value;
+        //进行特殊字符进行处理
+        nm = encodeURIComponent(nm);
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState==4){
+                alert(xhr.responseText);
+            }
+        }
+        xhr.open('post',"<?php echo url('admin_classification/index'); ?>");
+        xhr.send(nm);*/
+    }
+    //加载完成之后显示当前的
+   /* window.onload = function(){
+        //alert(213);*/
+
+</script>
 <body>
 <div class="wrap js-check-wrap">
     <ul class="nav nav-tabs">
         <li class="active"><a href="<?php echo url('admin_classification/index'); ?>">课程列表</a></li>
         <li><a href="<?php echo url('admin_classification/add'); ?>">添加课程</a></li>
-        <!--<li><a href="<?php echo url('AdminIndex/add'); ?>">添加课程</a></li>-->
     </ul>
     <div class="kecheng">
         <form action="#" method="post">
             <table>
                 <tr>
-                    <td width="50%">
+                    <!--<td width="50%">
                         课程名称：
                         <select name="chenzui">
                             <?php if(is_array($kecheng) || $kecheng instanceof \think\Collection || $kecheng instanceof \think\Paginator): if( count($kecheng)==0 ) : echo "" ;else: foreach($kecheng as $key=>$vo): ?>
                                 <option><?php echo $vo['name']; ?></option>
                              <?php endforeach; endif; else: echo "" ;endif; ?>
                         </select>
-                    </td>
+                    </td>-->
                     <td>
                         <form action="<?php echo url('admin_classification/index'); ?>" method="post">
-                            输入课程名称：<input type="text" name="query"/>
+                            输入课程名称：<input type="text" name="name" id="kecheng" onblur="chaxun()"/>
+
                             <input type="submit" value="查询"/>
                         </form>
                     </td>
@@ -116,12 +142,9 @@
                         <form action="<?php echo url('admin_classification/index'); ?>" method="post">
                             <input type="submit" value="显示所有课程"/>
                         </form>
-
                     </td>
-
                 </tr>
             </table>
-
         </form>
 
     </div>
@@ -152,13 +175,16 @@
                     <a href="<?php echo url('admin_classification/delete',array('id'=>$vo['id'])); ?>" class="js-ajax-delete"><?php echo lang('DELETE'); ?></a>
                 </td>
             </tr>
+
         <?php endforeach; endif; else: echo "" ;endif; ?>
         </tbody>
     </table>
+    <!--用于分页显示课程-->
     <div class="page">
-        上一页 1 2 3 4 5 6 下一页 【课程多了需要分页】
+        <div class="pagination"><?php echo (isset($page) && ($page !== '')?$page:''); ?></div>
     </div>
-</div>
+
+
 </div>
 <script src="__STATIC__/js/admin.js"></script>
 </body>

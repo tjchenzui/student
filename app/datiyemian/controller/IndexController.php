@@ -10,9 +10,9 @@
 // +----------------------------------------------------------------------
 namespace app\datiyemian\controller;
 
-use cmf\controller\HomeBaseController;
-
-class IndexController extends HomeBaseController
+//use cmf\controller\HomeBaseController;
+use cmf\controller\UserBaseController;
+class IndexController extends UserBaseController
 {
     public function index()
     {
